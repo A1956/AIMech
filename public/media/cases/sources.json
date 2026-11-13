@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "license": {
+    "name": "Pexels License",
+    "url": "https://www.pexels.com/license/",
+    "note": "仅使用 Pexels 免费照片；允许修改与剪辑。项目原有封面仅做色调与版式风格化。署名用于来源追溯，不表示作者为本项目背书。"
+  },
+  "video": {
+    "format": "MP4",
+    "codec": "H.264",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "duration": 8,
+    "audio": false,
+    "transition": "0.5s crossfade"
+  },
+  "cases": [
+    {
+      "caseId": 1,
+      "slug": "gecko",
+      "title": "壁虎干黏附",
+      "frames": [
+        { "kind": "cover", "image": "/covers/gecko.jpg", "caption": "附着与剥离：从足部接触切入", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 36866660, "caption": "家栖壁虎的脚趾与体表细节", "author": "Sweeming Young", "sourceUrl": "https://www.pexels.com/photo/macro-close-up-of-a-domestic-house-gecko-36866660/" },
+        { "kind": "photo", "id": 19945875, "caption": "日本壁虎的停栖与贴合姿态", "author": "Jari Lobo", "sourceUrl": "https://www.pexels.com/photo/close-up-of-a-japanese-gecko-19945875/" }
+      ]
+    },
+    {
+      "caseId": 2,
+      "slug": "honeycomb",
+      "title": "蜂巢夹层",
+      "frames": [
+        { "kind": "cover", "image": "/covers/honeycomb.jpg", "caption": "六边形单元：从蜂室到夹层", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 32489540, "caption": "规则蜂室与连续薄壁结构", "author": "Olegarx", "sourceUrl": "https://www.pexels.com/photo/close-up-of-vibrant-honeycomb-structure-32489540/" },
+        { "kind": "photo", "id": 6275966, "caption": "纸蜂窝填充材料的工程形态", "author": "Karola G", "sourceUrl": "https://www.pexels.com/photo/close-up-of-a-paper-filling-6275966/" }
+      ]
+    },
+    {
+      "caseId": 3,
+      "slug": "shark",
+      "title": "鲨鱼沟槽",
+      "frames": [
+        { "kind": "cover", "image": "/covers/shark.jpg", "caption": "从鲨鱼体表观察减阻启发", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 30548662, "caption": "鲨鱼近景与流线轮廓", "author": "Magda Ehlers", "sourceUrl": "https://www.pexels.com/photo/close-up-of-a-shark-underwater-30548662/" },
+        { "kind": "photo", "id": 13476998, "caption": "水下鲨鱼群与顺流游弋姿态", "author": "Just Guryan", "sourceUrl": "https://www.pexels.com/photo/underwater-view-of-swimming-sharks-13476998/" }
+      ]
+    },
+    {
+      "caseId": 4,
+      "slug": "bone",
+      "title": "鸟骨桁架",
+      "frames": [
+        { "kind": "cover", "image": "/covers/bone.jpg", "caption": "轻量骨架中的支撑与连接", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 26756638, "caption": "展陈中的鸟类骨架整体形态", "author": "didsss", "sourceUrl": "https://www.pexels.com/photo/bird-skeleton-at-exhibition-26756638/" },
+        { "kind": "photo", "id": 2493293, "caption": "鸵鸟骨架的长骨与支撑关系", "author": "Hans W", "sourceUrl": "https://www.pexels.com/photo/ostrich-skeleton-2493293/" }
+      ]
+    },
+    {
+      "caseId": 5,
+      "slug": "bat",
+      "title": "蝙蝠声呐",
+      "frames": [
+        { "kind": "cover", "image": "/covers/bat.jpg", "caption": "从飞行观察到回波定位", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 39049829, "caption": "飞行中的蝙蝠与翼膜展开", "author": "d67-hunter", "sourceUrl": "https://www.pexels.com/photo/flying-bat-against-clear-blue-sky-39049829/" },
+        { "kind": "photo", "id": 11557425, "caption": "蝙蝠面部与翼部近景", "author": "Maximilian Ruther", "sourceUrl": "https://www.pexels.com/photo/close-up-photograph-of-a-bat-11557425/" }
+      ]
+    },
+    {
+      "caseId": 6,
+      "slug": "lotus",
+      "title": "荷叶自清洁",
+      "frames": [
+        { "kind": "cover", "image": "/covers/lotus.jpg", "caption": "水滴、叶面与自清洁观察", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 25945065, "caption": "荷叶表面近似成珠的水滴", "author": "Dayong Tien", "sourceUrl": "https://www.pexels.com/photo/drop-of-water-on-a-green-lotus-leaf-25945065/" },
+        { "kind": "photo", "id": 32165399, "caption": "露珠与叶面的接触状态", "author": "Lily Lili", "sourceUrl": "https://www.pexels.com/photo/close-up-of-dew-drops-on-lotus-leaf-32165399/" }
+      ]
+    },
+    {
+      "caseId": 7,
+      "slug": "kingfisher",
+      "title": "翠鸟喙形",
+      "duration": 13,
+      "badgePosition": "right",
+      "titleOverlay": false,
+      "frames": [
+        { "kind": "cover", "image": "/covers/kingfisher.jpg", "caption": "细长喙形与低扰动入水", "credit": "项目原有封面 · 风格化" },
+        { "kind": "footage", "path": "scripts/footage/MyVideo_1.mp4", "caption": "翠鸟实拍片段", "credit": "用户提供 · 实拍视频" }
+      ]
+    },
+    {
+      "caseId": 8,
+      "slug": "snake",
+      "title": "蛇形运动",
+      "frames": [
+        { "kind": "cover", "image": "/covers/snake.jpg", "caption": "连续身体波与多关节映射", "credit": "项目原有封面 · 风格化" },
+        { "kind": "photo", "id": 7208422, "caption": "地面爬行中的蛇身曲线", "author": "Neuman", "sourceUrl": "https://www.pexels.com/photo/shallow-focus-photo-of-a-grass-snake-on-the-ground-7208422/" },
+        { "kind": "photo", "id": 17969526, "caption": "水中蛇形推进的身体波形", "author": "Ganajp", "sourceUrl": "https://www.pexels.com/photo/snake-swimming-in-the-water-17969526/" }
+      ]
+    }
+  ]
+}

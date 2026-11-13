@@ -1,0 +1,7617 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "stu",
+      "password": "MechDemo!26A",
+      "name": "林知衡",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-04",
+            "minutes": 22
+          },
+          {
+            "date": "2026-11-05",
+            "minutes": 35
+          },
+          {
+            "date": "2026-11-06",
+            "minutes": 18
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 40
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 27
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 33
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 15
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 90
+          }
+        ]
+      },
+      "points": 650,
+      "lastClaimDate": "2026-11-13",
+      "chatQuota": 30,
+      "unlockedCaseIds": [
+        1
+      ],
+      "inventory": [
+        "review_card",
+        "review_card",
+        "review_card"
+      ],
+      "chatFreeDate": "2026-11-13",
+      "chatFreeUsed": 7,
+      "dailyLearningDrawDate": "2026-11-13"
+    },
+    {
+      "id": 2,
+      "username": "teach",
+      "password": "MechDemo!26A",
+      "name": "周衡",
+      "role": "teacher",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": []
+      },
+      "points": 0,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 3,
+      "username": "stu2",
+      "password": "MechDemo!26A",
+      "name": "陈予安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 30
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 20
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 25
+          }
+        ]
+      },
+      "points": 45,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 4,
+      "username": "stu3",
+      "password": "MechDemo!26A",
+      "name": "赵景行",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 40
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 35
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 28
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 45
+          }
+        ]
+      },
+      "points": 45,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 5,
+      "username": "20260101",
+      "password": "MechDemo!26A",
+      "name": "徐星清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 78
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 146
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 171
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 176
+          }
+        ]
+      },
+      "points": 17,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 6,
+      "username": "20260102",
+      "password": "MechDemo!26A",
+      "name": "郑思川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 104
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 58
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 63
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 120
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 14
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 142
+          }
+        ]
+      },
+      "points": 34,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 7,
+      "username": "20260103",
+      "password": "MechDemo!26A",
+      "name": "黄安远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 98
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 44
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 142
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 127
+          }
+        ]
+      },
+      "points": 51,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 8,
+      "username": "20260104",
+      "password": "MechDemo!26A",
+      "name": "刘子睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 155
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 122
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 13
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 58
+          }
+        ]
+      },
+      "points": 68,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 9,
+      "username": "20260105",
+      "password": "MechDemo!26A",
+      "name": "黄清安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-10",
+            "minutes": 166
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 178
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 122
+          }
+        ]
+      },
+      "points": 85,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 10,
+      "username": "20260106",
+      "password": "MechDemo!26A",
+      "name": "刘思阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 20
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 43
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 94
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 121
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 135
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 28
+          }
+        ]
+      },
+      "points": 102,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 11,
+      "username": "20260107",
+      "password": "MechDemo!26A",
+      "name": "林若川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 33
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 144
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 109
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 74
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 132
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 89
+          }
+        ]
+      },
+      "points": 119,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 12,
+      "username": "20260108",
+      "password": "MechDemo!26A",
+      "name": "刘星桐",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 164
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 115
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 94
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 141
+          }
+        ]
+      },
+      "points": 136,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 13,
+      "username": "20260109",
+      "password": "MechDemo!26A",
+      "name": "徐若悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 128
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 152
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 72
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 166
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 72
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 89
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 46
+          }
+        ]
+      },
+      "points": 153,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 14,
+      "username": "20260110",
+      "password": "MechDemo!26A",
+      "name": "马星远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 26
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 17
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 35
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 83
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 175
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 51
+          }
+        ]
+      },
+      "points": 170,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 15,
+      "username": "20260111",
+      "password": "MechDemo!26A",
+      "name": "刘文阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 161
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 173
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 146
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 167
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 173
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 157
+          }
+        ]
+      },
+      "points": 187,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 16,
+      "username": "20260112",
+      "password": "MechDemo!26A",
+      "name": "宋景清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 104
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 106
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 44
+          }
+        ]
+      },
+      "points": 204,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 17,
+      "username": "20260113",
+      "password": "MechDemo!26A",
+      "name": "罗雨然",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-10",
+            "minutes": 162
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 141
+          }
+        ]
+      },
+      "points": 221,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 18,
+      "username": "20260114",
+      "password": "MechDemo!26A",
+      "name": "张安宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 22
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 119
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 21
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 88
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 149
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 167
+          }
+        ]
+      },
+      "points": 238,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 19,
+      "username": "20260115",
+      "password": "MechDemo!26A",
+      "name": "吴书宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-11",
+            "minutes": 90
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 137
+          }
+        ]
+      },
+      "points": 255,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 20,
+      "username": "20260116",
+      "password": "MechDemo!26A",
+      "name": "罗若轩",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 61
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 162
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 63
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 8
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 127
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 68
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 156
+          }
+        ]
+      },
+      "points": 272,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 21,
+      "username": "20260117",
+      "password": "MechDemo!26A",
+      "name": "宋明然",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 10
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 102
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 144
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 33
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 66
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 72
+          }
+        ]
+      },
+      "points": 289,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 22,
+      "username": "20260118",
+      "password": "MechDemo!26A",
+      "name": "谢以禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 168
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 75
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 73
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 155
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 123
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 14
+          }
+        ]
+      },
+      "points": 306,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 23,
+      "username": "20260119",
+      "password": "MechDemo!26A",
+      "name": "何嘉清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-11",
+            "minutes": 119
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 51
+          }
+        ]
+      },
+      "points": 323,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 24,
+      "username": "20260120",
+      "password": "MechDemo!26A",
+      "name": "梁雨川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 121
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 40
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 131
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 134
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 118
+          }
+        ]
+      },
+      "points": 340,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 25,
+      "username": "20260121",
+      "password": "MechDemo!26A",
+      "name": "刘星轩",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 175
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 34
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 162
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 73
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 130
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 179
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 99
+          }
+        ]
+      },
+      "points": 357,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 26,
+      "username": "20260122",
+      "password": "MechDemo!26A",
+      "name": "马若川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 143
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 165
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 104
+          }
+        ]
+      },
+      "points": 374,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 27,
+      "username": "20260123",
+      "password": "MechDemo!26A",
+      "name": "林清阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 145
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 163
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 87
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 128
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 39
+          }
+        ]
+      },
+      "points": 391,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 28,
+      "username": "20260124",
+      "password": "MechDemo!26A",
+      "name": "宋承清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 149
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 60
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 9
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 170
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 39
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 26
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 135
+          }
+        ]
+      },
+      "points": 408,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 29,
+      "username": "20260125",
+      "password": "MechDemo!26A",
+      "name": "胡雨桐",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 150
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 159
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 10
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 166
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 131
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 155
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 111
+          }
+        ]
+      },
+      "points": 425,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 30,
+      "username": "20260126",
+      "password": "MechDemo!26A",
+      "name": "高子辰",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 69
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 93
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 47
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 136
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 127
+          }
+        ]
+      },
+      "points": 442,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 31,
+      "username": "20260127",
+      "password": "MechDemo!26A",
+      "name": "王书睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 66
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 79
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 9
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 36
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 156
+          }
+        ]
+      },
+      "points": 459,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 32,
+      "username": "20260128",
+      "password": "MechDemo!26A",
+      "name": "高思阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 112
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 42
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 43
+          }
+        ]
+      },
+      "points": 476,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 33,
+      "username": "20260129",
+      "password": "MechDemo!26A",
+      "name": "宋若川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 36
+          }
+        ]
+      },
+      "points": 493,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 34,
+      "username": "20260130",
+      "password": "MechDemo!26A",
+      "name": "刘安阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 39
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 169
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 113
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 36
+          }
+        ]
+      },
+      "points": 510,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 35,
+      "username": "20260131",
+      "password": "MechDemo!26A",
+      "name": "孙景川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 62
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 171
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 124
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 158
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 99
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 30
+          }
+        ]
+      },
+      "points": 527,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 36,
+      "username": "20260132",
+      "password": "MechDemo!26A",
+      "name": "郑子宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 52
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 58
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 176
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 99
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 78
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 22
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 166
+          }
+        ]
+      },
+      "points": 544,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 37,
+      "username": "20260133",
+      "password": "MechDemo!26A",
+      "name": "林嘉铭",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 108
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 58
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 114
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 43
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 113
+          }
+        ]
+      },
+      "points": 561,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 38,
+      "username": "20260134",
+      "password": "MechDemo!26A",
+      "name": "马明妍",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 41
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 87
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 156
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 90
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 53
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 164
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 32
+          }
+        ]
+      },
+      "points": 578,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 39,
+      "username": "20260135",
+      "password": "MechDemo!26A",
+      "name": "张雨轩",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 36
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 151
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 64
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 45
+          }
+        ]
+      },
+      "points": 595,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 40,
+      "username": "20260136",
+      "password": "MechDemo!26A",
+      "name": "黄知航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 163
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 75
+          }
+        ]
+      },
+      "points": 612,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 41,
+      "username": "20260137",
+      "password": "MechDemo!26A",
+      "name": "林清清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 67
+          }
+        ]
+      },
+      "points": 629,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 42,
+      "username": "20260138",
+      "password": "MechDemo!26A",
+      "name": "马思远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 164
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 33
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 180
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 170
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 169
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 15
+          }
+        ]
+      },
+      "points": 646,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 43,
+      "username": "20260139",
+      "password": "MechDemo!26A",
+      "name": "何景川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-11",
+            "minutes": 28
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 48
+          }
+        ]
+      },
+      "points": 663,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 44,
+      "username": "20260140",
+      "password": "MechDemo!26A",
+      "name": "黄思安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 100
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 139
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 97
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 70
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 75
+          }
+        ]
+      },
+      "points": 680,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 45,
+      "username": "20260201",
+      "password": "MechDemo!26A",
+      "name": "高星悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 60
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 129
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 116
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 122
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 62
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 140
+          }
+        ]
+      },
+      "points": 697,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 46,
+      "username": "20260202",
+      "password": "MechDemo!26A",
+      "name": "胡若宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 145
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 103
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 55
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 163
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 132
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 29
+          }
+        ]
+      },
+      "points": 714,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 47,
+      "username": "20260203",
+      "password": "MechDemo!26A",
+      "name": "张亦禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 39
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 20
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 52
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 10
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 158
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 42
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 93
+          }
+        ]
+      },
+      "points": 731,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 48,
+      "username": "20260204",
+      "password": "MechDemo!26A",
+      "name": "罗亦妍",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 129
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 75
+          }
+        ]
+      },
+      "points": 748,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 49,
+      "username": "20260205",
+      "password": "MechDemo!26A",
+      "name": "刘清清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 154
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 32
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 63
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 84
+          }
+        ]
+      },
+      "points": 765,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 50,
+      "username": "20260206",
+      "password": "MechDemo!26A",
+      "name": "郑承禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 97
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 123
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 112
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 70
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 95
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 158
+          }
+        ]
+      },
+      "points": 782,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 51,
+      "username": "20260207",
+      "password": "MechDemo!26A",
+      "name": "黄子远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 51
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 141
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 22
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 71
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 13
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 125
+          }
+        ]
+      },
+      "points": 799,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 52,
+      "username": "20260208",
+      "password": "MechDemo!26A",
+      "name": "孙书阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 147
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 86
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 52
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 22
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 9
+          }
+        ]
+      },
+      "points": 16,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 53,
+      "username": "20260209",
+      "password": "MechDemo!26A",
+      "name": "马子悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 108
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 73
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 43
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 21
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 56
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 149
+          }
+        ]
+      },
+      "points": 33,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 54,
+      "username": "20260210",
+      "password": "MechDemo!26A",
+      "name": "郭子轩",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 161
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 32
+          }
+        ]
+      },
+      "points": 50,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 55,
+      "username": "20260211",
+      "password": "MechDemo!26A",
+      "name": "王文铭",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 108
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 37
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 99
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 148
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 141
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 102
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 154
+          }
+        ]
+      },
+      "points": 67,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 56,
+      "username": "20260212",
+      "password": "MechDemo!26A",
+      "name": "张承桐",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 83
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 52
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 169
+          }
+        ]
+      },
+      "points": 84,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 57,
+      "username": "20260213",
+      "password": "MechDemo!26A",
+      "name": "郭景清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 19
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 18
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 27
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 69
+          }
+        ]
+      },
+      "points": 101,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 58,
+      "username": "20260214",
+      "password": "MechDemo!26A",
+      "name": "徐承禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 82
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 90
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 155
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 34
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 113
+          }
+        ]
+      },
+      "points": 118,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 59,
+      "username": "20260215",
+      "password": "MechDemo!26A",
+      "name": "孙若然",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-10",
+            "minutes": 81
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 148
+          }
+        ]
+      },
+      "points": 135,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 60,
+      "username": "20260216",
+      "password": "MechDemo!26A",
+      "name": "谢以远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 177
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 146
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 38
+          }
+        ]
+      },
+      "points": 152,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 61,
+      "username": "20260217",
+      "password": "MechDemo!26A",
+      "name": "吴若安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-10",
+            "minutes": 59
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 168
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 171
+          }
+        ]
+      },
+      "points": 169,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 62,
+      "username": "20260218",
+      "password": "MechDemo!26A",
+      "name": "胡景川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 68
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 120
+          }
+        ]
+      },
+      "points": 186,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 63,
+      "username": "20260219",
+      "password": "MechDemo!26A",
+      "name": "李思川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 95
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 116
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 8
+          }
+        ]
+      },
+      "points": 203,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 64,
+      "username": "20260220",
+      "password": "MechDemo!26A",
+      "name": "谢清航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-10",
+            "minutes": 64
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 120
+          }
+        ]
+      },
+      "points": 220,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 65,
+      "username": "20260221",
+      "password": "MechDemo!26A",
+      "name": "王若禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-11",
+            "minutes": 129
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 146
+          }
+        ]
+      },
+      "points": 237,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 66,
+      "username": "20260222",
+      "password": "MechDemo!26A",
+      "name": "徐嘉航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 78
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 150
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 131
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 123
+          }
+        ]
+      },
+      "points": 254,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 67,
+      "username": "20260223",
+      "password": "MechDemo!26A",
+      "name": "林景铭",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 63
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 106
+          }
+        ]
+      },
+      "points": 271,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 68,
+      "username": "20260224",
+      "password": "MechDemo!26A",
+      "name": "郑以睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 95
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 54
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 117
+          }
+        ]
+      },
+      "points": 288,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 69,
+      "username": "20260225",
+      "password": "MechDemo!26A",
+      "name": "谢子铭",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-11",
+            "minutes": 55
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 77
+          }
+        ]
+      },
+      "points": 305,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 70,
+      "username": "20260226",
+      "password": "MechDemo!26A",
+      "name": "郑若航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 139
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 135
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 23
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 25
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 38
+          }
+        ]
+      },
+      "points": 322,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 71,
+      "username": "20260227",
+      "password": "MechDemo!26A",
+      "name": "宋亦阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 150
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 13
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 55
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 144
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 67
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 95
+          }
+        ]
+      },
+      "points": 339,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 72,
+      "username": "20260228",
+      "password": "MechDemo!26A",
+      "name": "王书安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 83
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 89
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 169
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 103
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 29
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 77
+          }
+        ]
+      },
+      "points": 356,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 73,
+      "username": "20260229",
+      "password": "MechDemo!26A",
+      "name": "林承悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 9
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 63
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 176
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 159
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 21
+          }
+        ]
+      },
+      "points": 373,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 74,
+      "username": "20260230",
+      "password": "MechDemo!26A",
+      "name": "罗书航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 96
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 161
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 59
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 20
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 38
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 101
+          }
+        ]
+      },
+      "points": 390,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 75,
+      "username": "20260231",
+      "password": "MechDemo!26A",
+      "name": "朱书川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 69
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 131
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 71
+          }
+        ]
+      },
+      "points": 407,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 76,
+      "username": "20260232",
+      "password": "MechDemo!26A",
+      "name": "梁子禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 63
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 89
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 172
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 168
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 31
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 9
+          }
+        ]
+      },
+      "points": 424,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 77,
+      "username": "20260233",
+      "password": "MechDemo!26A",
+      "name": "黄景禾",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 168
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 114
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 91
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 138
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 136
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 121
+          }
+        ]
+      },
+      "points": 441,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 78,
+      "username": "20260234",
+      "password": "MechDemo!26A",
+      "name": "王清清",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 39
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 119
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 171
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 85
+          }
+        ]
+      },
+      "points": 458,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 79,
+      "username": "20260235",
+      "password": "MechDemo!26A",
+      "name": "宋清桐",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 163
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 41
+          }
+        ]
+      },
+      "points": 475,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 80,
+      "username": "20260236",
+      "password": "MechDemo!26A",
+      "name": "李景铭",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 57
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 112
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 27
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 53
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 47
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 56
+          }
+        ]
+      },
+      "points": 492,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 81,
+      "username": "20260237",
+      "password": "MechDemo!26A",
+      "name": "朱亦睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 11
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 55
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 82
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 22
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 137
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 23
+          }
+        ]
+      },
+      "points": 509,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 82,
+      "username": "20260238",
+      "password": "MechDemo!26A",
+      "name": "宋明宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 167
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 45
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 161
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 95
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 106
+          }
+        ]
+      },
+      "points": 526,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 83,
+      "username": "20260239",
+      "password": "MechDemo!26A",
+      "name": "何亦远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 45
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 56
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 119
+          }
+        ]
+      },
+      "points": 543,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 84,
+      "username": "20260240",
+      "password": "MechDemo!26A",
+      "name": "刘景宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 119
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 106
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 167
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 13
+          }
+        ]
+      },
+      "points": 560,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 85,
+      "username": "20260301",
+      "password": "MechDemo!26A",
+      "name": "罗子辰",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 133
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 19
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 18
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 145
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 139
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 31
+          }
+        ]
+      },
+      "points": 577,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 86,
+      "username": "20260302",
+      "password": "MechDemo!26A",
+      "name": "郭明宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 103
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 133
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 119
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 19
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 10
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 52
+          }
+        ]
+      },
+      "points": 594,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 87,
+      "username": "20260303",
+      "password": "MechDemo!26A",
+      "name": "张子悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 40
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 146
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 66
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 104
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 43
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 128
+          }
+        ]
+      },
+      "points": 611,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 88,
+      "username": "20260304",
+      "password": "MechDemo!26A",
+      "name": "何清悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-10",
+            "minutes": 51
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 115
+          }
+        ]
+      },
+      "points": 628,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 89,
+      "username": "20260305",
+      "password": "MechDemo!26A",
+      "name": "孙以阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 159
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 70
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 127
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 156
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 174
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 47
+          }
+        ]
+      },
+      "points": 645,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 90,
+      "username": "20260306",
+      "password": "MechDemo!26A",
+      "name": "朱安铭",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 103
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 79
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 28
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 34
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 49
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 72
+          }
+        ]
+      },
+      "points": 662,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 91,
+      "username": "20260307",
+      "password": "MechDemo!26A",
+      "name": "高子安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 134
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 172
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 117
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 179
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 68
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 179
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 85
+          }
+        ]
+      },
+      "points": 679,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 92,
+      "username": "20260308",
+      "password": "MechDemo!26A",
+      "name": "梁知桐",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 110
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 130
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 104
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 93
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 38
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 46
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 98
+          }
+        ]
+      },
+      "points": 696,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 93,
+      "username": "20260309",
+      "password": "MechDemo!26A",
+      "name": "谢若然",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 167
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 66
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 123
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 44
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 87
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 157
+          }
+        ]
+      },
+      "points": 713,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 94,
+      "username": "20260310",
+      "password": "MechDemo!26A",
+      "name": "胡雨妍",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 129
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 10
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 167
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 12
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 161
+          }
+        ]
+      },
+      "points": 730,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 95,
+      "username": "20260311",
+      "password": "MechDemo!26A",
+      "name": "宋子川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 110
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 111
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 80
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 133
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 107
+          }
+        ]
+      },
+      "points": 747,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 96,
+      "username": "20260312",
+      "password": "MechDemo!26A",
+      "name": "郭亦悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 177
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 38
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 91
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 40
+          }
+        ]
+      },
+      "points": 764,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 97,
+      "username": "20260313",
+      "password": "MechDemo!26A",
+      "name": "谢安悦",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 79
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 137
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 19
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 64
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 9
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 141
+          }
+        ]
+      },
+      "points": 781,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 98,
+      "username": "20260314",
+      "password": "MechDemo!26A",
+      "name": "朱星安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 119
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 26
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 176
+          }
+        ]
+      },
+      "points": 798,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 99,
+      "username": "20260315",
+      "password": "MechDemo!26A",
+      "name": "罗嘉睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 98
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 124
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 16
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 66
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 61
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 80
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 22
+          }
+        ]
+      },
+      "points": 15,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 100,
+      "username": "20260316",
+      "password": "MechDemo!26A",
+      "name": "梁文轩",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 44
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 104
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 175
+          }
+        ]
+      },
+      "points": 32,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 101,
+      "username": "20260317",
+      "password": "MechDemo!26A",
+      "name": "梁景辰",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 142
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 144
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 46
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 34
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 116
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 32
+          }
+        ]
+      },
+      "points": 49,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 102,
+      "username": "20260318",
+      "password": "MechDemo!26A",
+      "name": "黄亦宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 144
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 12
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 167
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 84
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 65
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 125
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 168
+          }
+        ]
+      },
+      "points": 66,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 103,
+      "username": "20260319",
+      "password": "MechDemo!26A",
+      "name": "马亦睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 143
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 90
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 121
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 29
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 158
+          }
+        ]
+      },
+      "points": 83,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 104,
+      "username": "20260320",
+      "password": "MechDemo!26A",
+      "name": "黄思川",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 104
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 105
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 44
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 47
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 157
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 122
+          }
+        ]
+      },
+      "points": 100,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 105,
+      "username": "20260321",
+      "password": "MechDemo!26A",
+      "name": "谢嘉睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 163
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 101
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 36
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 107
+          }
+        ]
+      },
+      "points": 117,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 106,
+      "username": "20260322",
+      "password": "MechDemo!26A",
+      "name": "胡明宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 47
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 129
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 76
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 89
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 40
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 93
+          }
+        ]
+      },
+      "points": 134,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 107,
+      "username": "20260323",
+      "password": "MechDemo!26A",
+      "name": "林景妍",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 96
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 77
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 14
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 32
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 10
+          }
+        ]
+      },
+      "points": 151,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 108,
+      "username": "20260324",
+      "password": "MechDemo!26A",
+      "name": "罗星安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 18
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 149
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 171
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 107
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 153
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 86
+          }
+        ]
+      },
+      "points": 168,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 109,
+      "username": "20260325",
+      "password": "MechDemo!26A",
+      "name": "梁星安",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-11",
+            "minutes": 122
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 122
+          }
+        ]
+      },
+      "points": 185,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 110,
+      "username": "20260326",
+      "password": "MechDemo!26A",
+      "name": "高景睿",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 15
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 92
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 145
+          }
+        ]
+      },
+      "points": 202,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 111,
+      "username": "20260327",
+      "password": "MechDemo!26A",
+      "name": "王知然",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 164
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 10
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 35
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 117
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 64
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 144
+          }
+        ]
+      },
+      "points": 219,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 112,
+      "username": "20260328",
+      "password": "MechDemo!26A",
+      "name": "宋若轩",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 175
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 94
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 173
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 123
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 116
+          }
+        ]
+      },
+      "points": 236,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 113,
+      "username": "20260329",
+      "password": "MechDemo!26A",
+      "name": "高子航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 101
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 171
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 14
+          }
+        ]
+      },
+      "points": 253,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 114,
+      "username": "20260330",
+      "password": "MechDemo!26A",
+      "name": "王知辰",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-09",
+            "minutes": 142
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 56
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 157
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 13
+          }
+        ]
+      },
+      "points": 270,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 115,
+      "username": "20260331",
+      "password": "MechDemo!26A",
+      "name": "徐若远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 33
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 83
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 59
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 112
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 55
+          }
+        ]
+      },
+      "points": 287,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 116,
+      "username": "20260332",
+      "password": "MechDemo!26A",
+      "name": "吴明航",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 67
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 150
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 14
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 46
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 26
+          }
+        ]
+      },
+      "points": 304,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 117,
+      "username": "20260333",
+      "password": "MechDemo!26A",
+      "name": "黄雨阳",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 136
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 74
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 170
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 116
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 156
+          }
+        ]
+      },
+      "points": 321,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 118,
+      "username": "20260334",
+      "password": "MechDemo!26A",
+      "name": "梁知宁",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-06",
+            "minutes": 166
+          },
+          {
+            "date": "2026-11-07",
+            "minutes": 18
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 157
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 112
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 90
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 149
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 113
+          }
+        ]
+      },
+      "points": 338,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 119,
+      "username": "20260335",
+      "password": "MechDemo!26A",
+      "name": "罗嘉桐",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 89
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 126
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 158
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 93
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 150
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 152
+          }
+        ]
+      },
+      "points": 355,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 120,
+      "username": "20260336",
+      "password": "MechDemo!26A",
+      "name": "胡若远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "studyLog": [
+          {
+            "date": "2026-11-07",
+            "minutes": 45
+          },
+          {
+            "date": "2026-11-08",
+            "minutes": 17
+          },
+          {
+            "date": "2026-11-09",
+            "minutes": 19
+          },
+          {
+            "date": "2026-11-10",
+            "minutes": 31
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 90
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 11
+          }
+        ]
+      },
+      "points": 372,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    },
+    {
+      "id": 121,
+      "username": "20260337",
+      "password": "MechDemo!26A",
+      "name": "王思远",
+      "role": "student",
+      "avatar": "",
+      "progress": {
+        "completedCourseIds": [],
+        "studyLog": [
+          {
+            "date": "2026-11-08",
+            "minutes": 110
+          },
+          {
+            "date": "2026-11-11",
+            "minutes": 78
+          },
+          {
+            "date": "2026-11-12",
+            "minutes": 10
+          }
+        ]
+      },
+      "points": 389,
+      "lastClaimDate": null,
+      "chatQuota": 0,
+      "unlockedCaseIds": [],
+      "inventory": [],
+      "chatFreeDate": null,
+      "chatFreeUsed": 0
+    }
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "title": "壁虎脚掌的干黏附与可控脱附",
+      "bioPrototype": "大壁虎脚趾由层状皮瓣、微米级刚毛和约 200 nm 的末端压舌板组成。刚毛沿趾向倾斜，动物靠“压下—拖拽—揭起”切换黏附与脱附，不分泌胶水。",
+      "principle": "末端压舌板与表面形成大面积分子级接触后，范德华力沿真实接触面积累积。切向预压增大接触面积，因此法向承载力会上升。脱附不是硬撕，而是把剥离角提高到约 25°–30°，让界面裂纹从趾尖向后扩展，黏附力按 Kendall 剥离模型迅速下降。这个机理适合可逆抓取，不适合永久粘接。",
+      "structure": "采用倾斜楔形微柱加末端弹性薄膜瓣，背衬用低模量硅橡胶顺应粗糙表面，内部用肌腱式拉索实现“下压黏附、上抬脱附”。足掌分区驱动，避免整足同时剥离。微柱方向必须与剥离方向一致，否则会出现卡死或突然失黏。",
+      "params": [
+        {
+          "name": "刚毛面密度",
+          "symbol": "ρs",
+          "value": "1×10^4 量级",
+          "unit": "根/mm²",
+          "note": "密度提高承载力，但过高会让相邻刚毛粘连"
+        },
+        {
+          "name": "末端瓣厚度",
+          "symbol": "t",
+          "value": "50–300",
+          "unit": "nm",
+          "note": "越薄越容易贴合，过薄则撕裂"
+        },
+        {
+          "name": "剥离角",
+          "symbol": "θ",
+          "value": "25–30",
+          "unit": "°",
+          "note": "超过临界角后黏附力陡降，是脱附开关"
+        },
+        {
+          "name": "预压力",
+          "symbol": "Fp",
+          "value": "0.1–0.5",
+          "unit": "N/cm²",
+          "note": "干黏附所需预压远低于吸盘和胶水"
+        }
+      ],
+      "applications": [
+        "爬壁检测机器人足端",
+        "真空环境无胶夹持",
+        "晶圆与柔性屏的无损搬运",
+        "在轨服务的可逆抓取接口"
+      ],
+      "tags": [
+        "干黏附",
+        "微纳结构",
+        "爬壁机器人",
+        "界面力学"
+      ],
+      "difficulty": "进阶",
+      "cover": "/covers/gecko.jpg",
+      "views": 200,
+      "likes": 42,
+      "createdAt": "2026-09-12T02:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "蜂巢夹层的高比刚度壁板",
+      "bioPrototype": "蜜蜂巢房以六边形密排，用很少的蜂蜡把材料放到离中性面较远的位置，从而用很小的质量获得可观的抗弯能力。",
+      "principle": "夹层梁中，上下面板主要承担弯曲正应力，芯层主要承担剪应力。六边形可以无间隙铺满平面，并且在周长一定时接近圆的面积效率。芯层等效剪切模量大致随相对密度 ρ*/ρs 和壁厚壁长比 t/l 上升。设计时要同时校核面板屈服、芯层剪切和面板皱曲，不能只看弯曲刚度。",
+      "structure": "上面板（铝或碳纤维层合板）+ 六边形铝蜂窝或芳纶纸蜂窝 + 下面板。面板与芯层胶接或钎焊，边缘用 C 形梁或灌封收边，防止芯层压溃和潮气进入。开孔区要在面板局部加厚或加嵌件，避免载荷直接压到薄芯上。",
+      "params": [
+        {
+          "name": "芯层壁厚壁长比",
+          "symbol": "t/l",
+          "value": "0.01–0.05",
+          "unit": "-",
+          "note": "决定相对密度和面外剪切模量"
+        },
+        {
+          "name": "芯层高度",
+          "symbol": "hc",
+          "value": "5–30",
+          "unit": "mm",
+          "note": "增高能抬升弯曲刚度，同时降低剪切刚度占比"
+        },
+        {
+          "name": "相对密度",
+          "symbol": "ρ*/ρs",
+          "value": "0.02–0.08",
+          "unit": "-",
+          "note": "轻质夹层的常用区间，过低会皱曲"
+        },
+        {
+          "name": "面板厚度",
+          "symbol": "tf",
+          "value": "0.4–1.5",
+          "unit": "mm",
+          "note": "按面板应力和局部屈曲一起确定"
+        }
+      ],
+      "applications": [
+        "卫星仪器壁板",
+        "飞机地板与舵面",
+        "轻量化机器人外壳",
+        "缓冲吸能箱体"
+      ],
+      "tags": [
+        "轻量化",
+        "夹层结构",
+        "比刚度",
+        "航空航天"
+      ],
+      "difficulty": "入门",
+      "cover": "/covers/honeycomb.jpg",
+      "views": 241,
+      "likes": 51,
+      "createdAt": "2026-09-18T02:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "鲨鱼盾鳞沟槽的湍流减阻",
+      "bioPrototype": "鲨鱼皮盾鳞沿流向排列，表面有微米级纵沟。鳞片并不靠“更光滑”减阻，而是改变近壁湍流结构。",
+      "principle": "纵向微沟槽限制流向涡的横向摆动，削弱近壁区的湍流猝发和动量交换，从而降低壁面摩擦。减阻只在湍流边界层里明显，并且对无量纲间距 s+ = s·uτ/ν 敏感，经典刀刃型沟槽的最优间距大约在 s+ = 15–20。沟槽过高会增加湿面积，减阻变成增阻。",
+      "structure": "在蒙皮、贴膜或管道内壁上加工顺流向刀刃肋或锯齿肋。肋高与间距比 h/s 常取 0.5 左右。基体可用柔性聚氨酯贴膜，便于贴在曲面上；高速或耐磨场合改用微铣、滚压或激光加工的金属肋。肋的方向必须顺着主流，错了方向几乎没有收益。",
+      "params": [
+        {
+          "name": "无量纲间距",
+          "symbol": "s+",
+          "value": "15–20",
+          "unit": "-",
+          "note": "用摩擦速度和运动粘度把几何间距无量纲化"
+        },
+        {
+          "name": "肋高间距比",
+          "symbol": "h/s",
+          "value": "0.4–0.6",
+          "unit": "-",
+          "note": "刀刃型沟槽的常用几何窗口"
+        },
+        {
+          "name": "物理间距",
+          "symbol": "s",
+          "value": "50–150",
+          "unit": "μm",
+          "note": "随航速和流体粘度变化，不能直接照搬鲨鱼尺寸"
+        },
+        {
+          "name": "减阻幅度",
+          "symbol": "DR",
+          "value": "5–10",
+          "unit": "%",
+          "note": "指湍流摩擦阻力，不是形状阻力"
+        }
+      ],
+      "applications": [
+        "船舶减阻贴膜",
+        "长输管道内壁",
+        "高雷诺数流道",
+        "水下航行器蒙皮"
+      ],
+      "tags": [
+        "减阻",
+        "湍流",
+        "表面织构",
+        "流体"
+      ],
+      "difficulty": "进阶",
+      "cover": "/covers/shark.jpg",
+      "views": 164,
+      "likes": 33,
+      "createdAt": "2026-09-26T02:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "鸟类骨骼的中空桁架轻量化",
+      "bioPrototype": "鸟类长骨是中空的气动骨，骨壁薄，内部骨小梁大致沿主应力方向布置，用来抑制薄壁失稳而不是堆材料。",
+      "principle": "弯曲构件的材料应远离中性轴，所以同样质量的中空截面比实心截面有更大的惯性矩。壁厚继续减小时，失效模式从屈服转为局部屈曲。内部桁架或骨小梁用很少的材料提高截面的局部稳定性。选型时把弹性模量、密度和强度放到 Ashby 图上比较，而不是只看“挖空了多少”。",
+      "structure": "主梁采用椭圆或圆形薄壁管，内部按主弯矩方向布置仿骨小梁加劲肋，或用体心、八面体点阵填充。金属件可用选区激光熔化一体打印后热处理；更大尺寸用复合材料缠绕加内部打印芯核。端部必须局部实心化，用来传递关节或轴承载荷。",
+      "params": [
+        {
+          "name": "径厚比",
+          "symbol": "D/t",
+          "value": "15–40",
+          "unit": "-",
+          "note": "过大则局部屈曲先于材料屈服"
+        },
+        {
+          "name": "相对密度",
+          "symbol": "ρ*/ρs",
+          "value": "0.1–0.3",
+          "unit": "-",
+          "note": "内部点阵的常用填充率"
+        },
+        {
+          "name": "长细比",
+          "symbol": "L/D",
+          "value": "8–20",
+          "unit": "-",
+          "note": "决定整体弯曲还是端部局部失效主导"
+        },
+        {
+          "name": "主应力肋角",
+          "symbol": "φ",
+          "value": "沿弯矩平面",
+          "unit": "°",
+          "note": "肋若垂直于主应力，减重几乎不换来刚度"
+        }
+      ],
+      "applications": [
+        "无人机机臂",
+        "协作机械臂连杆",
+        "假肢主结构",
+        "轻型夹具横梁"
+      ],
+      "tags": [
+        "轻量化",
+        "点阵",
+        "屈曲",
+        "增材制造"
+      ],
+      "difficulty": "进阶",
+      "cover": "/covers/bone.jpg",
+      "views": 151,
+      "likes": 29,
+      "createdAt": "2026-10-03T02:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "蝙蝠调频声呐与双耳定位",
+      "bioPrototype": "小蝙蝠用喉部发出调频或恒频-调频超声，靠耳廓的方向性滤波和双耳时延解读距离、方位和仰角，在全黑洞穴里捕食。",
+      "principle": "宽带调频回波的时延给出距离，距离分辨率大约是 ΔR ≈ c/(2B)，带宽 B 越大分辨越细。方位来自双耳时间差和强度差，仰角则被耳廓陷波调制到频谱里。发射与接收必须时间隔离，否则自发声会淹没回波。空气中超声衰减随频率迅速增加，所以远距离不能盲目追求高频。",
+      "structure": "一对或环形超声换能器加仿耳廓反射罩，控制器做线性调频发射和互相关时延估计，再与轮式里程计或 IMU 融合。机构上把发射器与接收器错开，并在波形上留出静默窗。反射罩可做成非对称曲面，用不同频率的灵敏度编码仰角。",
+      "params": [
+        {
+          "name": "中心频率",
+          "symbol": "f0",
+          "value": "40–80",
+          "unit": "kHz",
+          "note": "频率升高分辨率更好，但空气衰减急剧变大"
+        },
+        {
+          "name": "信号带宽",
+          "symbol": "B",
+          "value": "10–40",
+          "unit": "kHz",
+          "note": "直接决定距离分辨率"
+        },
+        {
+          "name": "双耳基线",
+          "symbol": "b",
+          "value": "40–120",
+          "unit": "mm",
+          "note": "基线越长，方位对时延越敏感"
+        },
+        {
+          "name": "脉冲间隔",
+          "symbol": "T",
+          "value": "20–80",
+          "unit": "ms",
+          "note": "必须大于最远回波时延，避免距离模糊"
+        }
+      ],
+      "applications": [
+        "烟尘环境巡检机器人",
+        "管道与废墟探测",
+        "农业机械夜间避障",
+        "无光照仓储盘点"
+      ],
+      "tags": [
+        "声呐",
+        "感知",
+        "定位",
+        "仿生传感"
+      ],
+      "difficulty": "综合",
+      "cover": "/covers/bat.jpg",
+      "views": 128,
+      "likes": 24,
+      "createdAt": "2026-10-08T02:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "荷叶乳突的双尺度自清洁",
+      "bioPrototype": "荷叶表面有微米级乳突，乳突上还有蜡质纳米枝晶。水滴接触角大于 150°，稍一倾斜就滚走，并把灰尘带走。",
+      "principle": "液滴坐在固-气复合界面上，这是 Cassie-Baxter 状态。粗糙度让液滴只接触凸起顶部，三相接触线很短，接触角滞后小，所以滚动角可以低于 10°。污染物颗粒与液滴的黏附往往大于与固体的黏附，于是被水滴带走。一旦液滴被压进凹坑变成 Wenzel 状态，自清洁就会失效。",
+      "structure": "先在基材上用激光、微铣或复制模做出微柱或微坑，再覆盖低表面能涂层，或直接用疏水弹性体复制双尺度织构。户外件要设计涂层可再涂覆，因为沙蚀会先磨掉纳米结构。传感器窗口还要同时满足透光，不能只追求接触角。",
+      "params": [
+        {
+          "name": "表观接触角",
+          "symbol": "θ*",
+          "value": ">150",
+          "unit": "°",
+          "note": "只说明疏水，不保证容易滚落"
+        },
+        {
+          "name": "滚动角",
+          "symbol": "α",
+          "value": "<10",
+          "unit": "°",
+          "note": "自清洁更应看滚动角和接触角滞后"
+        },
+        {
+          "name": "微柱间距",
+          "symbol": "p",
+          "value": "20–80",
+          "unit": "μm",
+          "note": "间距过大，液滴会掉进凹坑"
+        },
+        {
+          "name": "固体面积分数",
+          "symbol": "f",
+          "value": "0.05–0.2",
+          "unit": "-",
+          "note": "越小越疏水，但抗压能力越差"
+        }
+      ],
+      "applications": [
+        "户外传感器窗口",
+        "光伏板防尘",
+        "医疗器械防污表面",
+        "食品机械易清洁罩壳"
+      ],
+      "tags": [
+        "超疏水",
+        "自清洁",
+        "表面织构",
+        "润湿"
+      ],
+      "difficulty": "入门",
+      "cover": "/covers/lotus.jpg",
+      "views": 211,
+      "likes": 47,
+      "createdAt": "2026-10-14T02:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "title": "翠鸟喙形的入水冲击与降噪",
+      "bioPrototype": "翠鸟喙细长，截面从尖端到根部平滑变化。它从空气扎入水面时几乎不溅起水花，冲击和噪声都很小。",
+      "principle": "细长回转体降低了入水瞬间的压力峰值和流动分离。截面面积沿轴向的变化率决定压力波有多陡。高速列车驶入隧道时，车头截面变化过急会产生微气压波和气动噪声；把车头拉成喙形样条，就是在控制这个变化率。减噪来自压力分布，不是表面贴了一层吸声材料。",
+      "structure": "头部整流罩按旋转抛物线或 von Karman 样条放样，长细比宜大，过渡区避免台阶和突然的肩部。内部用蜂窝或泡沫吸收剩余冲击，安装缝放在压力恢复区之后。若用于风机或管道入口，要把唇口做成连续曲率，而不是把外罩做成尖角装饰。",
+      "params": [
+        {
+          "name": "长细比",
+          "symbol": "L/D",
+          "value": "2.5–4.5",
+          "unit": "-",
+          "note": "过短则压力梯度仍然很陡"
+        },
+        {
+          "name": "截面变化率",
+          "symbol": "dA/dx",
+          "value": "连续且前缓",
+          "unit": "m",
+          "note": "尖端变化慢，根部再平滑接到等截面"
+        },
+        {
+          "name": "入水/入隧速度",
+          "symbol": "U",
+          "value": "按任务给定",
+          "unit": "m/s",
+          "note": "冲击压力大致随速度平方上升"
+        },
+        {
+          "name": "肩部曲率半径",
+          "symbol": "R",
+          "value": "避免尖角",
+          "unit": "mm",
+          "note": "曲率间断会重新制造分离和噪声"
+        }
+      ],
+      "applications": [
+        "高速列车头型",
+        "跨介质航行器头部",
+        "低噪声风机进气罩",
+        "高速机械的整流外壳"
+      ],
+      "tags": [
+        "减噪",
+        "气动外形",
+        "高速",
+        "跨介质"
+      ],
+      "difficulty": "综合",
+      "cover": "/covers/kingfisher.jpg",
+      "views": 144,
+      "likes": 27,
+      "createdAt": "2026-10-20T02:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "title": "蛇的多模态运动与蛇形机器人",
+      "bioPrototype": "蛇没有四肢，却能在沙地、树干和窄缝里切换蛇行波、手风琴式伸缩、侧向翻滚和直线爬行。腹鳞使切向更容易滑动，法向更难侧滑。",
+      "principle": "蛇行推进是一条沿身体向后传播的曲率波。各节与地面摩擦的切向分量叠加成净推力。Serpenoid 曲线常写成 κ(s,t) = α·sin(2πs/λ + ωt)，波的幅值、波长和频率决定步态，而不是某一个关节角。摩擦必须各向异性，否则波只会原地扭动。模块增多会提高通过性，也带来误差累积和控制带宽问题。",
+      "structure": "10–20 个单自由度偏航模块串联，可在窄平面里蛇行；需要越障时改成正交万向节，让相邻关节轴互相垂直。腹部安装被动轮或方向性鳞片，提供各向异性摩擦。头部留出传感器舱，导线从中空关节穿过，并预留节距方向的弯曲余量。",
+      "params": [
+        {
+          "name": "曲率幅值",
+          "symbol": "α",
+          "value": "2–8",
+          "unit": "1/m",
+          "note": "过大则打滑，过小则没有法向接触力"
+        },
+        {
+          "name": "波长",
+          "symbol": "λ",
+          "value": "占身长 1/4–1/2",
+          "unit": "m",
+          "note": "窄管道里要缩短波长"
+        },
+        {
+          "name": "关节数",
+          "symbol": "n",
+          "value": "10–20",
+          "unit": "节",
+          "note": "至少要能放下一个完整波形"
+        },
+        {
+          "name": "摩擦比",
+          "symbol": "μn/μt",
+          "value": ">2",
+          "unit": "-",
+          "note": "法向摩擦应明显大于切向摩擦"
+        }
+      ],
+      "applications": [
+        "废墟搜救",
+        "工业管道检测",
+        "狭窄设备舱巡检",
+        "微创手术机器人的运动雏形"
+      ],
+      "tags": [
+        "蛇形机器人",
+        "运动学",
+        "冗余驱动",
+        "非结构化环境"
+      ],
+      "difficulty": "综合",
+      "cover": "/covers/snake.jpg",
+      "views": 178,
+      "likes": 37,
+      "createdAt": "2026-10-28T02:00:00.000Z"
+    }
+  ],
+  "conversations": [
+    {
+      "userId": 2,
+      "title": "潮湿表面还能否用干黏附”或“轻量化时",
+      "createdAt": "2026-11-11T07:09:34.152Z",
+      "updatedAt": "2026-11-11T07:10:13.127Z",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "足式机器人",
+      "createdAt": "2026-11-13T08:24:07.643Z",
+      "updatedAt": "2026-11-13T08:25:33.633Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "title": "新的仿生设计问答",
+      "createdAt": "2026-11-13T10:45:15.114Z",
+      "updatedAt": "2026-11-13T10:45:15.114Z",
+      "id": 4
+    }
+  ],
+  "messages": [
+    {
+      "conversationId": 2,
+      "role": "user",
+      "content": "鲨鱼皮沟槽在什么条件下才会减阻？",
+      "refCaseId": null,
+      "createdAt": "2026-11-11T07:09:34.216Z",
+      "id": 5
+    },
+    {
+      "conversationId": 2,
+      "role": "assistant",
+      "content": "结论：这个问题更接近「鲨鱼盾鳞沟槽的湍流减阻」。\n生物原型：鲨鱼皮盾鳞沿流向排列，表面有微米级纵沟。鳞片并不靠“更光滑”减阻，而是改变近壁湍流结构。\n可迁移机理：纵向微沟槽限制流向涡的横向摆动，削弱近壁区的湍流猝发和动量交换，从而降低壁面摩擦。减阻只在湍流边界层里明显，并且对无量纲间距 s+ = s·uτ/ν 敏感，经典刀刃型沟槽的最优间距大约在 s+ = 15–20。沟槽过高会增加湿面积，减阻变成增阻。\n机械方案：在蒙皮、贴膜或管道内壁上加工顺流向刀刃肋或锯齿肋。肋高与间距比 h/s 常取 0.5 左右。基体可用柔性聚氨酯贴膜，便于贴在曲面上；高速或耐磨场合改用微铣、滚压或激光加工的金属肋。肋的方向必须顺着主流，错了方向几乎没有收益。\n优先盯住的参数：无量纲间距（s+）15–20 -。用摩擦速度和运动粘度把几何间距无量纲化\n工程上可以落到：船舶减阻贴膜、长输管道内壁。\n教学建议：把上述参数写进设计任务的约束和校核项，再拿到参数推荐里用载荷、介质和重量上限核一次。",
+      "refCaseId": 3,
+      "createdAt": "2026-11-11T07:09:39.169Z",
+      "id": 6
+    },
+    {
+      "conversationId": 2,
+      "role": "user",
+      "content": "你好",
+      "refCaseId": null,
+      "createdAt": "2026-11-11T07:09:49.491Z",
+      "id": 7
+    },
+    {
+      "conversationId": 2,
+      "role": "assistant",
+      "content": "我是仿生机械设计助教，回答会先检索案例库，再组织机理、结构和参数，而不是只给一句比喻。\n当前案例库覆盖：壁虎脚掌的干黏附与可控脱附、蜂巢夹层的高比刚度壁板、鲨鱼盾鳞沟槽的湍流减阻、鸟类骨骼的中空桁架轻量化、蝙蝠调频声呐与双耳定位、荷叶乳突的双尺度自清洁、翠鸟喙形的入水冲击与降噪、蛇的多模态运动与蛇形机器人。\n你可以直接问一个约束，例如“潮湿表面还能否用干黏附”或“轻量化时夹层和中空梁怎么选”。",
+      "refCaseId": null,
+      "createdAt": "2026-11-11T07:09:52.186Z",
+      "id": 8
+    },
+    {
+      "conversationId": 2,
+      "role": "user",
+      "content": "潮湿表面还能否用干黏附”或“轻量化时夹层和中空梁怎么选",
+      "refCaseId": null,
+      "createdAt": "2026-11-11T07:10:07.337Z",
+      "id": 9
+    },
+    {
+      "conversationId": 2,
+      "role": "assistant",
+      "content": "结论：这个问题更接近「壁虎脚掌的干黏附与可控脱附」。\n生物原型：大壁虎脚趾由层状皮瓣、微米级刚毛和约 200 nm 的末端压舌板组成。刚毛沿趾向倾斜，动物靠“压下—拖拽—揭起”切换黏附与脱附，不分泌胶水。\n可迁移机理：末端压舌板与表面形成大面积分子级接触后，范德华力沿真实接触面积累积。切向预压增大接触面积，因此法向承载力会上升。脱附不是硬撕，而是把剥离角提高到约 25°–30°，让界面裂纹从趾尖向后扩展，黏附力按 Kendall 剥离模型迅速下降。这个机理适合可逆抓取，不适合永久粘接。\n机械方案：采用倾斜楔形微柱加末端弹性薄膜瓣，背衬用低模量硅橡胶顺应粗糙表面，内部用肌腱式拉索实现“下压黏附、上抬脱附”。足掌分区驱动，避免整足同时剥离。微柱方向必须与剥离方向一致，否则会出现卡死或突然失黏。\n优先盯住的参数：刚毛面密度（ρs）1×10^4 量级 根/mm²。密度提高承载力，但过高会让相邻刚毛粘连\n工程上可以落到：爬壁检测机器人足端、真空环境无胶夹持。\n教学建议：把上述参数写进设计任务的约束和校核项，再拿到参数推荐里用载荷、介质和重量上限核一次。\n对照：若约束更接近「鸟类骨骼的中空桁架轻量化」，机制是另一条路，不要把两者合成一个外形。",
+      "refCaseId": 1,
+      "createdAt": "2026-11-11T07:10:13.065Z",
+      "id": 10
+    },
+    {
+      "conversationId": 3,
+      "role": "user",
+      "content": "你是谁",
+      "refCaseId": null,
+      "createdAt": "2026-11-13T08:24:13.734Z",
+      "id": 11
+    },
+    {
+      "conversationId": 3,
+      "role": "assistant",
+      "content": "我是「小智」，机械与机器人专业的仿生设计 AI 助教。我可以用仿生案例的机理帮你分析和解答设计问题，比如壁虎脚掌的干黏附与可控脱附、蜂巢夹层壁板、鲨鱼盾鳞沟槽减阻、鸟类中空骨骼轻量化、蝙蝠声呐定位、荷叶自清洁、翠鸟喙形入水降噪、蛇形机器人运动等。你想聊哪个方向？",
+      "refCaseId": null,
+      "createdAt": "2026-11-13T08:24:18.458Z",
+      "id": 12
+    },
+    {
+      "conversationId": 3,
+      "role": "user",
+      "content": "什么是十足机器人",
+      "refCaseId": null,
+      "createdAt": "2026-11-13T08:24:45.294Z",
+      "id": 13
+    },
+    {
+      "conversationId": 3,
+      "role": "assistant",
+      "content": "你问的「十足机器人」不是我案例库里的内容，我不能编造。我这边能讲的是仿生机理相关的案例，比如壁虎干黏附、蜂巢夹层、鲨鱼沟槽减阻、鸟类中空骨骼、蝙蝠声呐、荷叶自清洁、翠鸟喙形、蛇形机器人等。\n\n如果你是想问「足式机器人」或多足仿生机器人，可以告诉我具体想了解哪方面（结构、驱动、步态），我用案例机理帮你分析。",
+      "refCaseId": null,
+      "createdAt": "2026-11-13T08:24:50.490Z",
+      "id": 14
+    },
+    {
+      "conversationId": 3,
+      "role": "user",
+      "content": "足式机器人",
+      "refCaseId": null,
+      "createdAt": "2026-11-13T08:25:28.343Z",
+      "id": 15
+    },
+    {
+      "conversationId": 3,
+      "role": "assistant",
+      "content": "足式机器人我案例库里没有专门的机理条目，不能编造参数。不过和它相关的仿生运动机理，我能讲的是蛇形机器人这一条：\n\n蛇行推进是一条沿身体向后传播的曲率波，各节与地面摩擦的切向分量叠加成净推力，常用 Serpenoid 曲线描述：κ(s,t) = α·sin(2πs/λ + ωt)。这属于无足、靠身体波动的推进方式，和腿式步态不是一回事。\n\n如果你关注的是腿足结构本身（关节布置、驱动、步态相位），我这边没有对应案例，建议你换个角度问，比如轻量化结构可以聊鸟类中空桁架骨骼，附着抓握可以聊壁虎干黏附。你想往哪个方向走？",
+      "refCaseId": null,
+      "createdAt": "2026-11-13T08:25:33.607Z",
+      "id": 16
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "界面力：从刚毛到干黏附足",
+      "stage": "机理认知",
+      "order": 1,
+      "desc": "分清范德华接触、剥离角和预压力。要求能说明为什么干黏附可以可逆，以及潮湿为什么会让它失效。",
+      "caseIds": [
+        1
+      ],
+      "duration": 40
+    },
+    {
+      "id": 2,
+      "title": "润湿与自清洁表面",
+      "stage": "机理认知",
+      "order": 2,
+      "desc": "用接触角、滚动角和 Cassie-Baxter 状态解释荷叶。完成标准是能指出“只报接触角”为什么不够。",
+      "caseIds": [
+        6
+      ],
+      "duration": 35
+    },
+    {
+      "id": 3,
+      "title": "湍流边界层与沟槽减阻",
+      "stage": "机理认知",
+      "order": 3,
+      "desc": "建立 s+ 的概念，知道沟槽减阻只在湍流摩擦阻力里成立，并且几何尺寸必须随航速改写。",
+      "caseIds": [
+        3
+      ],
+      "duration": 45
+    },
+    {
+      "id": 4,
+      "title": "轻质高刚度：蜂巢与骨小梁",
+      "stage": "结构映射",
+      "order": 4,
+      "desc": "比较夹层板和中空加肋梁。同一条轻量化需求，要能说出面板、芯层、屈曲分别约束哪一个尺寸。",
+      "caseIds": [
+        2,
+        4
+      ],
+      "duration": 50
+    },
+    {
+      "id": 5,
+      "title": "外形、冲击与气动噪声",
+      "stage": "结构映射",
+      "order": 5,
+      "desc": "把翠鸟喙理解成截面变化率设计，而不是一个好看的尖头。能解释列车头型和入水冲击为什么是同一类问题。",
+      "caseIds": [
+        7
+      ],
+      "duration": 40
+    },
+    {
+      "id": 6,
+      "title": "感知映射：调频声呐",
+      "stage": "结构映射",
+      "order": 6,
+      "desc": "把距离分辨率、双耳基线和空气衰减放到同一张参数表里，避免只提高频率。",
+      "caseIds": [
+        5
+      ],
+      "duration": 45
+    },
+    {
+      "id": 7,
+      "title": "冗余运动链与蛇形步态",
+      "stage": "工程综合",
+      "order": 7,
+      "desc": "用 Serpenoid 曲率波和摩擦各向异性解释推进。要求给出关节数、波长和摩擦比的取值理由。",
+      "caseIds": [
+        8
+      ],
+      "duration": 55
+    },
+    {
+      "id": 8,
+      "title": "约束驱动的方案比较",
+      "stage": "工程综合",
+      "order": 8,
+      "desc": "给定载荷、行程、介质和重量上限，选出两套可解释方案，并回到案例参数表里写出校核项。",
+      "caseIds": [
+        1,
+        2,
+        4
+      ],
+      "duration": 60
+    }
+  ],
+  "favorites": [
+    {
+      "id": 2,
+      "userId": 1,
+      "caseId": 7,
+      "createdAt": "2026-11-09T03:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "createdAt": "2026-11-11T06:49:15.391Z",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "caseId": 8,
+      "createdAt": "2026-11-11T06:57:35.972Z",
+      "id": 4
+    }
+  ],
+  "records": [
+    {
+      "id": 1,
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-08T09:10:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "caseId": 1,
+      "type": "complete",
+      "createdAt": "2026-11-08T09:40:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "caseId": 6,
+      "type": "view",
+      "createdAt": "2026-11-09T02:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "caseId": 6,
+      "type": "complete",
+      "createdAt": "2026-11-09T02:30:00.000Z"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "caseId": 2,
+      "type": "view",
+      "createdAt": "2026-11-10T01:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "caseId": 2,
+      "type": "complete",
+      "createdAt": "2026-11-10T01:20:00.000Z"
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "caseId": 3,
+      "type": "view",
+      "createdAt": "2026-11-07T08:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "caseId": 4,
+      "type": "view",
+      "createdAt": "2026-11-06T08:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-11T06:49:10.552Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "caseId": 8,
+      "type": "view",
+      "createdAt": "2026-11-11T06:57:14.649Z",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-07T02:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "caseId": 1,
+      "type": "complete",
+      "createdAt": "2026-11-07T02:30:00.000Z"
+    },
+    {
+      "id": 13,
+      "userId": 3,
+      "caseId": 3,
+      "type": "view",
+      "createdAt": "2026-11-08T03:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "userId": 4,
+      "caseId": 1,
+      "type": "complete",
+      "createdAt": "2026-11-06T03:00:00.000Z"
+    },
+    {
+      "id": 15,
+      "userId": 4,
+      "caseId": 6,
+      "type": "complete",
+      "createdAt": "2026-11-06T04:00:00.000Z"
+    },
+    {
+      "id": 16,
+      "userId": 4,
+      "caseId": 3,
+      "type": "complete",
+      "createdAt": "2026-11-08T05:00:00.000Z"
+    },
+    {
+      "id": 17,
+      "userId": 4,
+      "caseId": 2,
+      "type": "view",
+      "createdAt": "2026-11-09T05:00:00.000Z"
+    },
+    {
+      "id": 18,
+      "userId": 3,
+      "caseId": 8,
+      "type": "view",
+      "createdAt": "2026-11-10T05:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-11T08:01:13.454Z",
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-11T08:01:33.477Z",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-11T08:01:51.566Z",
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "caseId": 3,
+      "type": "view",
+      "createdAt": "2026-11-11T11:17:15.756Z",
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "caseId": 3,
+      "type": "complete",
+      "createdAt": "2026-11-11T12:05:29.260Z",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "caseId": 3,
+      "type": "complete",
+      "createdAt": "2026-11-11T12:05:39.630Z",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "caseId": 2,
+      "type": "view",
+      "createdAt": "2026-11-11T14:15:07.414Z",
+      "id": 25
+    },
+    {
+      "userId": 2,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-12T10:40:19.767Z",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "caseId": 8,
+      "type": "view",
+      "createdAt": "2026-11-13T08:26:51.254Z",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "caseId": 8,
+      "type": "view",
+      "createdAt": "2026-11-13T09:02:46.994Z",
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "caseId": 8,
+      "type": "view",
+      "createdAt": "2026-11-13T09:04:17.680Z",
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T09:08:58.697Z",
+      "id": 30
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T09:14:17.971Z",
+      "id": 31
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:23:15.637Z",
+      "id": 32
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:24:53.644Z",
+      "id": 33
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:26:09.904Z",
+      "id": 34
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:27:20.687Z",
+      "id": 35
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:28:15.582Z",
+      "id": 36
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:30:36.075Z",
+      "id": 37
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:31:45.445Z",
+      "id": 38
+    },
+    {
+      "userId": 1,
+      "caseId": 1,
+      "type": "view",
+      "createdAt": "2026-11-13T10:32:25.017Z",
+      "id": 39
+    },
+    {
+      "userId": 1,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-13T10:45:54.703Z",
+      "id": 40
+    },
+    {
+      "userId": 1,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-13T10:55:15.850Z",
+      "id": 41
+    },
+    {
+      "userId": 1,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-13T12:15:15.826Z",
+      "id": 42
+    },
+    {
+      "userId": 1,
+      "caseId": 6,
+      "type": "view",
+      "createdAt": "2026-11-13T15:12:56.950Z",
+      "id": 43
+    },
+    {
+      "userId": 1,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-13T15:13:25.454Z",
+      "id": 44
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "壁虎干黏附：剥离角与脱附开关",
+      "caseId": 1,
+      "knowledgePoint": "界面力与干黏附",
+      "stage": "机理认知",
+      "durationMin": 12,
+      "views": 286,
+      "createdAt": "2026-10-20T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "荷叶双尺度：Cassie 到 Wenzel 的失效",
+      "caseId": 6,
+      "knowledgePoint": "润湿与自清洁",
+      "stage": "机理认知",
+      "durationMin": 10,
+      "views": 241,
+      "createdAt": "2026-10-21T08:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "鲨鱼沟槽：s+ 选距与湍流边界层",
+      "caseId": 3,
+      "knowledgePoint": "湍流减阻",
+      "stage": "机理认知",
+      "durationMin": 14,
+      "views": 198,
+      "createdAt": "2026-10-22T08:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "蜂巢夹层：面板屈服与芯层剪切校核",
+      "caseId": 2,
+      "knowledgePoint": "夹层结构比刚度",
+      "stage": "结构映射",
+      "durationMin": 16,
+      "views": 167,
+      "createdAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "鸟骨中空梁：径厚比与局部屈曲",
+      "caseId": 4,
+      "knowledgePoint": "轻量化桁架",
+      "stage": "结构映射",
+      "durationMin": 13,
+      "views": 152,
+      "createdAt": "2026-10-24T08:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "翠鸟喙形：截面变化率与气动噪声",
+      "caseId": 7,
+      "knowledgePoint": "气动外形减噪",
+      "stage": "结构映射",
+      "durationMin": 11,
+      "views": 133,
+      "createdAt": "2026-10-25T08:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "title": "蝙蝠调频声呐：带宽、基线与衰减",
+      "caseId": 5,
+      "knowledgePoint": "仿生感知定位",
+      "stage": "结构映射",
+      "durationMin": 15,
+      "views": 121,
+      "createdAt": "2026-10-26T08:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "title": "蛇形机器人：Serpenoid 曲率波与摩擦各向异性",
+      "caseId": 8,
+      "knowledgePoint": "冗余运动链",
+      "stage": "工程综合",
+      "durationMin": 18,
+      "views": 109,
+      "createdAt": "2026-10-27T08:00:00.000Z"
+    }
+  ],
+  "questionStats": [
+    {
+      "id": 1,
+      "question": "潮湿表面还能不能用干黏附做主承载？",
+      "topic": "界面力与干黏附",
+      "caseId": 1,
+      "count": 42,
+      "lastAskedAt": "2026-11-10T16:20:00.000Z"
+    },
+    {
+      "id": 2,
+      "question": "剥离角为什么取 25°–30°，再大一点会怎样？",
+      "topic": "界面力与干黏附",
+      "caseId": 1,
+      "count": 37,
+      "lastAskedAt": "2026-11-11T02:10:00.000Z"
+    },
+    {
+      "id": 3,
+      "question": "鲨鱼皮沟槽的 s+ 怎么换算到实际肋间距？",
+      "topic": "湍流减阻",
+      "caseId": 3,
+      "count": 33,
+      "lastAskedAt": "2026-11-09T11:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "question": "同样要轻，蜂巢夹层和鸟骨中空梁怎么选？",
+      "topic": "轻量化结构",
+      "caseId": 2,
+      "count": 29,
+      "lastAskedAt": "2026-11-10T08:40:00.000Z"
+    },
+    {
+      "id": 5,
+      "question": "只报接触角够不够证明自清洁？滚动角为什么重要？",
+      "topic": "润湿与自清洁",
+      "caseId": 6,
+      "count": 26,
+      "lastAskedAt": "2026-11-08T14:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "question": "蛇形机器人关节数增加后控制带宽怎么处理？",
+      "topic": "冗余运动链",
+      "caseId": 8,
+      "count": 21,
+      "lastAskedAt": "2026-11-07T09:30:00.000Z"
+    },
+    {
+      "id": 7,
+      "question": "翠鸟喙减噪和高速列车头型是不是同一类截面变化问题？",
+      "topic": "气动外形减噪",
+      "caseId": 7,
+      "count": 18,
+      "lastAskedAt": "2026-11-06T18:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "question": "蝙蝠声呐距离分辨率和带宽是什么关系？",
+      "topic": "仿生感知定位",
+      "caseId": 5,
+      "count": 15,
+      "lastAskedAt": "2026-11-05T12:00:00.000Z"
+    }
+  ],
+  "knowledgeWeakness": [
+    {
+      "id": 1,
+      "knowledgePoint": "湍流减阻 / s+ 选距",
+      "stage": "机理认知",
+      "courseId": 3,
+      "caseId": 3,
+      "weakRate": 0.72,
+      "wrongHint": "多数学生把沟槽当成“更光滑”，未建立无量纲间距",
+      "suggestion": "补做一次 s+ 换算练习，并对照视频 3"
+    },
+    {
+      "id": 2,
+      "knowledgePoint": "夹层结构失效模式",
+      "stage": "结构映射",
+      "courseId": 4,
+      "caseId": 2,
+      "weakRate": 0.65,
+      "wrongHint": "只谈比刚度，漏校核芯层剪切与面板皱曲",
+      "suggestion": "用同一载荷让学生分别校核面板 / 芯层 / 皱曲"
+    },
+    {
+      "id": 3,
+      "knowledgePoint": "轻量化与局部屈曲",
+      "stage": "结构映射",
+      "courseId": 4,
+      "caseId": 4,
+      "weakRate": 0.61,
+      "wrongHint": "径厚比过大时仍按屈服设计",
+      "suggestion": "要求写出屈曲临界与加劲方案"
+    },
+    {
+      "id": 4,
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "stage": "工程综合",
+      "courseId": 7,
+      "caseId": 8,
+      "weakRate": 0.58,
+      "wrongHint": "只调关节角，不给曲率波与摩擦比",
+      "suggestion": "节点 7 增加 Serpenoid 参数表作业"
+    },
+    {
+      "id": 5,
+      "knowledgePoint": "气动外形截面变化率",
+      "stage": "结构映射",
+      "courseId": 5,
+      "caseId": 7,
+      "weakRate": 0.47,
+      "wrongHint": "把减噪理解成表面吸声",
+      "suggestion": "对照列车微气压波案例讲解"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "subject": "仿生学",
+      "knowledgePoint": "干黏附与剥离角",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "壁虎干黏附脱附时，剥离角大约取多少最利于界面裂纹扩展？",
+      "options": [
+        "5°–10°",
+        "25°–30°",
+        "60°–70°",
+        "90°"
+      ],
+      "answer": "25°–30°",
+      "analysis": "Kendall 剥离模型下，约 25°–30° 时黏附力陡降，是可控脱附开关。",
+      "caseId": 1,
+      "createdAt": "2026-10-20T08:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "subject": "仿生学",
+      "knowledgePoint": "干黏附与剥离角",
+      "difficulty": "进阶",
+      "type": "judge",
+      "stem": "干黏附主要靠分泌胶水形成永久粘接。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "analysis": "干黏附靠范德华力的可逆接触，不依赖胶水。",
+      "caseId": 1,
+      "createdAt": "2026-10-20T08:10:00.000Z"
+    },
+    {
+      "id": 3,
+      "subject": "仿生学",
+      "knowledgePoint": "润湿与自清洁",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "荷叶自清洁对应的主要润湿状态是？",
+      "options": [
+        "Wenzel 完全浸润",
+        "Cassie-Baxter 复合界面",
+        "牛顿粘性膜",
+        "毛细虹吸"
+      ],
+      "answer": "Cassie-Baxter 复合界面",
+      "analysis": "液滴坐在固-气复合界面上，滚动角小，才能带走污染物。",
+      "caseId": 6,
+      "createdAt": "2026-10-21T08:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "subject": "仿生学",
+      "knowledgePoint": "湍流减阻",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "经典刀刃型沟槽最优无量纲间距 s+ 大约在？",
+      "options": [
+        "1–3",
+        "15–20",
+        "80–100",
+        "200–300"
+      ],
+      "answer": "15–20",
+      "analysis": "s+=s·uτ/ν，最优约 15–20；过高会因湿面积增大而增阻。",
+      "caseId": 3,
+      "createdAt": "2026-10-22T08:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "subject": "仿生学",
+      "knowledgePoint": "湍流减阻",
+      "difficulty": "综合",
+      "type": "judge",
+      "stem": "鲨鱼皮沟槽在层流边界层中也能稳定减阻 10% 以上。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "analysis": "沟槽减阻主要针对湍流近壁结构，层流收益很小甚至为负。",
+      "caseId": 3,
+      "createdAt": "2026-10-22T08:10:00.000Z"
+    },
+    {
+      "id": 6,
+      "subject": "仿生学",
+      "knowledgePoint": "仿生感知定位",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "蝙蝠调频声呐的距离分辨率大致与什么成反比？",
+      "options": [
+        "发射功率",
+        "脉冲重复频率",
+        "信号带宽",
+        "耳廓长度"
+      ],
+      "answer": "信号带宽",
+      "analysis": "ΔR≈c/(2B)，带宽越大距离分辨越细。",
+      "caseId": 5,
+      "createdAt": "2026-10-23T08:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "subject": "机械设计",
+      "knowledgePoint": "夹层结构失效模式",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "蜂巢夹层梁中，芯层主要承担的是？",
+      "options": [
+        "弯曲正应力",
+        "轴向拉力",
+        "剪应力",
+        "扭转刚心偏移"
+      ],
+      "answer": "剪应力",
+      "analysis": "面板承担弯曲正应力，芯层主要承担剪应力。",
+      "caseId": 2,
+      "createdAt": "2026-10-24T08:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "subject": "机械设计",
+      "knowledgePoint": "夹层结构失效模式",
+      "difficulty": "进阶",
+      "type": "judge",
+      "stem": "夹层板设计只需校核弯曲刚度，不必校核面板皱曲。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "analysis": "还需校核面板屈服、芯层剪切和面板皱曲。",
+      "caseId": 2,
+      "createdAt": "2026-10-24T08:10:00.000Z"
+    },
+    {
+      "id": 9,
+      "subject": "机械设计",
+      "knowledgePoint": "轻量化与局部屈曲",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "弯曲构件轻量化时，材料应尽量布置在？",
+      "options": [
+        "中性轴附近",
+        "远离中性轴",
+        "仅在腹板中心",
+        "随机填充"
+      ],
+      "answer": "远离中性轴",
+      "analysis": "同样质量下，远离中性轴可提高截面惯性矩。",
+      "caseId": 4,
+      "createdAt": "2026-10-25T08:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "subject": "机械设计",
+      "knowledgePoint": "轻量化与局部屈曲",
+      "difficulty": "综合",
+      "type": "single",
+      "stem": "中空薄壁梁径厚比过大时，优先出现的失效常是？",
+      "options": [
+        "材料屈服",
+        "局部屈曲",
+        "疲劳裂纹止裂",
+        "螺栓滑移"
+      ],
+      "answer": "局部屈曲",
+      "analysis": "壁过薄时失效模式由屈服转为局部屈曲，需加肋或点阵补稳。",
+      "caseId": 4,
+      "createdAt": "2026-10-25T08:10:00.000Z"
+    },
+    {
+      "id": 11,
+      "subject": "机械设计",
+      "knowledgePoint": "气动外形截面变化率",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "翠鸟喙形列车头减噪的关键是控制？",
+      "options": [
+        "表面吸声材料厚度",
+        "截面面积沿轴向变化率",
+        "轮轨噪声频率",
+        "车厢内空调风速"
+      ],
+      "answer": "截面面积沿轴向变化率",
+      "analysis": "入洞微气压波与气动噪声取决于轴向截面积变化率。",
+      "caseId": 7,
+      "createdAt": "2026-10-26T08:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "subject": "机械设计",
+      "knowledgePoint": "气动外形截面变化率",
+      "difficulty": "入门",
+      "type": "judge",
+      "stem": "把车头做成尖喙主要是为了贴吸声棉。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "analysis": "减噪来自压力分布与分离控制，不是表面吸声。",
+      "caseId": 7,
+      "createdAt": "2026-10-26T08:10:00.000Z"
+    },
+    {
+      "id": 13,
+      "subject": "机器人",
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "蛇形机器人蛇行推进的核心运动描述是？",
+      "options": [
+        "刚体平面移动",
+        "沿身体传播的曲率波",
+        "单轮差速",
+        "四足对角小跑"
+      ],
+      "answer": "沿身体传播的曲率波",
+      "analysis": "Serpenoid 曲率波向后传播，结合各向异性摩擦产生净推力。",
+      "caseId": 8,
+      "createdAt": "2026-10-27T08:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "subject": "机器人",
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "difficulty": "进阶",
+      "type": "judge",
+      "stem": "若切向与法向摩擦相同，蛇行波仍能稳定产生净推进。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "analysis": "摩擦必须各向异性，否则波只会原地扭动。",
+      "caseId": 8,
+      "createdAt": "2026-10-27T08:10:00.000Z"
+    },
+    {
+      "id": 15,
+      "subject": "机器人",
+      "knowledgePoint": "冗余驱动与模块数",
+      "difficulty": "综合",
+      "type": "single",
+      "stem": "蛇形机器人模块数增加的主要代价是？",
+      "options": [
+        "通过性必然下降",
+        "误差累积与控制带宽压力上升",
+        "完全不能转弯",
+        "无法安装传感器"
+      ],
+      "answer": "误差累积与控制带宽压力上升",
+      "analysis": "模块增多提高通过性，但也带来误差累积与控制带宽问题。",
+      "caseId": 8,
+      "createdAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+      "id": 16,
+      "subject": "机器人",
+      "knowledgePoint": "爬壁与干黏附足",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "干黏附爬壁足设计时，刚毛倾斜方向应与？",
+      "options": [
+        "重力方向垂直",
+        "剥离方向一致",
+        "任意随机",
+        "电机轴线重合即可"
+      ],
+      "answer": "剥离方向一致",
+      "analysis": "方向不一致会出现卡死或突然失黏。",
+      "caseId": 1,
+      "createdAt": "2026-10-28T08:10:00.000Z"
+    },
+    {
+      "id": 17,
+      "subject": "机器人",
+      "knowledgePoint": "仿生感知定位",
+      "difficulty": "综合",
+      "type": "judge",
+      "stem": "空气中超声频率越高，远距离探测一定越好。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "错误",
+      "analysis": "空气衰减随频率迅速增加，远距离不能盲目追求高频。",
+      "caseId": 5,
+      "createdAt": "2026-10-29T08:00:00.000Z"
+    },
+    {
+      "id": 18,
+      "subject": "机械设计",
+      "knowledgePoint": "夹层结构失效模式",
+      "difficulty": "综合",
+      "type": "single",
+      "stem": "夹层板开孔或螺钉处通常需要？",
+      "options": [
+        "故意减薄面板",
+        "加嵌件或局部补强",
+        "取消芯层",
+        "只涂一层胶"
+      ],
+      "answer": "加嵌件或局部补强",
+      "analysis": "薄芯层经不起局部挤压，开孔与紧固点必须嵌件补强。",
+      "caseId": 2,
+      "createdAt": "2026-10-29T08:10:00.000Z"
+    },
+    {
+      "id": 19,
+      "subject": "仿生学",
+      "knowledgePoint": "润湿与自清洁",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "荷叶效应失效、液滴陷入凹坑时进入的是？",
+      "options": [
+        "Cassie-Baxter",
+        "Wenzel",
+        "Marangoni",
+        "Leidenfrost"
+      ],
+      "answer": "Wenzel",
+      "analysis": "被压进凹坑后转为 Wenzel，自清洁失效。",
+      "caseId": 6,
+      "createdAt": "2026-10-30T08:00:00.000Z"
+    },
+    {
+      "id": 20,
+      "subject": "机器人",
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "窄平面蛇行常用的关节配置是？",
+      "options": [
+        "仅俯仰串联",
+        "单自由度偏航模块串联",
+        "球面并联台",
+        "履带差速"
+      ],
+      "answer": "单自由度偏航模块串联",
+      "analysis": "10–20 个偏航模块串联可在窄平面蛇行；越障再改正交万向节。",
+      "caseId": 8,
+      "createdAt": "2026-10-30T08:10:00.000Z"
+    },
+    {
+      "id": 21,
+      "subject": "机器人",
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "蛇形机器人在平面内产生净推进，关键是？",
+      "options": [
+        "各方向摩擦完全相同",
+        "身体曲率波与方向性摩擦协同",
+        "只增加机身质量",
+        "所有关节保持直线"
+      ],
+      "answer": "身体曲率波与方向性摩擦协同",
+      "analysis": "曲率波提供波动运动，摩擦各向异性将周期运动转化为净推进。",
+      "caseId": 8,
+      "createdAt": "2026-11-12T08:10:00.000Z"
+    },
+    {
+      "id": 22,
+      "subject": "机器人",
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "difficulty": "进阶",
+      "type": "judge",
+      "stem": "蛇形机器人的关节曲率波长应结合机身长度与环境通道尺度确定。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "正确",
+      "analysis": "波长影响身体形状和推进步态，应根据机身长度及通过空间调整。",
+      "caseId": 8,
+      "createdAt": "2026-11-12T08:20:00.000Z"
+    },
+    {
+      "id": 23,
+      "subject": "机器人",
+      "knowledgePoint": "冗余运动链与摩擦各向异性",
+      "difficulty": "进阶",
+      "type": "single",
+      "stem": "评估蛇形机器人步态时，除前进速度外还应关注？",
+      "options": [
+        "机身侧滑与能耗",
+        "外壳颜色",
+        "控制器外形",
+        "关节铭牌字体"
+      ],
+      "answer": "机身侧滑与能耗",
+      "analysis": "侧滑会降低推进效率并增加能耗，因此应与速度一起评价。",
+      "caseId": 8,
+      "createdAt": "2026-11-12T08:30:00.000Z"
+    },
+    {
+      "id": 24,
+      "subject": "仿生学",
+      "knowledgePoint": "干黏附与剥离角",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "干黏附足端需要脱离表面时，较合适的动作是？",
+      "options": [
+        "沿表面持续压紧",
+        "逐步抬起边缘形成剥离",
+        "增加法向预压力",
+        "保持足端不动"
+      ],
+      "answer": "逐步抬起边缘形成剥离",
+      "analysis": "从边缘逐步剥离可使界面裂纹扩展，所需脱附力低于整体硬拉。",
+      "caseId": 1,
+      "createdAt": "2026-11-12T08:40:00.000Z"
+    },
+    {
+      "id": 25,
+      "subject": "仿生学",
+      "knowledgePoint": "干黏附与剥离角",
+      "difficulty": "入门",
+      "type": "judge",
+      "stem": "仿壁虎干黏附主要依靠表面微结构形成接触，并非依靠液态胶水。",
+      "options": [
+        "正确",
+        "错误"
+      ],
+      "answer": "正确",
+      "analysis": "壁虎脚掌通过微纳结构增大真实接触面积，实现可逆干黏附。",
+      "caseId": 1,
+      "createdAt": "2026-11-12T08:50:00.000Z"
+    },
+    {
+      "id": 26,
+      "subject": "仿生学",
+      "knowledgePoint": "干黏附与剥离角",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "干黏附足端设计时，哪项有助于适应表面粗糙度？",
+      "options": [
+        "采用有一定顺应性的背衬",
+        "让所有微柱刚度无限增大",
+        "减小真实接触面积",
+        "取消足端分区"
+      ],
+      "answer": "采用有一定顺应性的背衬",
+      "analysis": "顺应性背衬帮助微结构贴合粗糙表面，提升有效接触面积。",
+      "caseId": 1,
+      "createdAt": "2026-11-12T09:00:00.000Z"
+    },
+    {
+      "id": 27,
+      "subject": "仿生学",
+      "knowledgePoint": "干黏附与剥离角",
+      "difficulty": "入门",
+      "type": "single",
+      "stem": "壁虎足端的微米级刚毛主要帮助足掌实现什么？",
+      "options": [
+        "扩大与表面的真实接触",
+        "产生液态黏胶",
+        "加热接触界面",
+        "隔绝所有切向力"
+      ],
+      "answer": "扩大与表面的真实接触",
+      "analysis": "微纳刚毛顺应表面形貌，提升真实接触面积，从而增强可逆干黏附。",
+      "caseId": 1,
+      "createdAt": "2026-11-12T09:10:00.000Z"
+    }
+  ],
+  "papers": [
+    {
+      "id": 1,
+      "title": "仿生学B卷",
+      "teacherId": 2,
+      "subjects": [
+        "仿生学"
+      ],
+      "difficulty": "入门",
+      "count": 5,
+      "questionIds": [
+        1,
+        2,
+        3,
+        4,
+        19
+      ],
+      "durationMin": 20,
+      "deadline": "2026-12-31T23:59:00",
+      "scoreTotal": 100,
+      "chapter": "全部",
+      "questionType": "全部",
+      "createdAt": "2026-11-01T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "机械设计A卷",
+      "teacherId": 2,
+      "subjects": [
+        "机械设计"
+      ],
+      "difficulty": "进阶",
+      "count": 6,
+      "questionIds": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "durationMin": 30,
+      "deadline": "2026-12-15T18:00:00",
+      "scoreTotal": 100,
+      "chapter": "全部",
+      "questionType": "全部",
+      "createdAt": "2026-11-05T09:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "机器人A卷",
+      "teacherId": 2,
+      "subjects": [
+        "机器人"
+      ],
+      "difficulty": "进阶",
+      "count": 5,
+      "questionIds": [
+        14,
+        16,
+        21,
+        22,
+        23
+      ],
+      "durationMin": 25,
+      "deadline": "2026-12-20T22:00:00",
+      "scoreTotal": 100,
+      "chapter": "全部",
+      "questionType": "全部",
+      "createdAt": "2026-11-08T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "章节测试·干黏附与剥离角",
+      "teacherId": 2,
+      "subjects": [
+        "仿生学"
+      ],
+      "difficulty": "入门",
+      "count": 5,
+      "questionIds": [
+        1,
+        24,
+        25,
+        26,
+        27
+      ],
+      "durationMin": 15,
+      "deadline": "2026-11-30T23:59:00",
+      "scoreTotal": 80,
+      "chapter": "干黏附与剥离角",
+      "questionType": "全部",
+      "createdAt": "2026-11-09T08:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "机理认知随堂测（已截止）",
+      "teacherId": 2,
+      "subjects": [
+        "仿生学",
+        "机械设计"
+      ],
+      "difficulty": "混合",
+      "count": 5,
+      "questionIds": [
+        1,
+        2,
+        3,
+        7,
+        9
+      ],
+      "durationMin": 20,
+      "deadline": "2026-10-01T23:59:00",
+      "scoreTotal": 100,
+      "chapter": "全部",
+      "questionType": "全部",
+      "createdAt": "2026-09-15T09:00:00.000Z"
+    }
+  ],
+  "quizAttempts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "paperId": 1,
+      "mode": "assigned",
+      "subject": "仿生学",
+      "score": 60,
+      "total": 100,
+      "correctCount": 3,
+      "questionCount": 5,
+      "wrongQuestionIds": [
+        4,
+        19
+      ],
+      "detail": [
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        },
+        {
+          "questionId": 2,
+          "selected": "错误",
+          "correct": true
+        },
+        {
+          "questionId": 3,
+          "selected": "Cassie-Baxter 复合界面",
+          "correct": true
+        },
+        {
+          "questionId": 4,
+          "selected": "1–3",
+          "correct": false
+        },
+        {
+          "questionId": 19,
+          "selected": "Cassie-Baxter",
+          "correct": false
+        }
+      ],
+      "durationSec": 680,
+      "createdAt": "2026-11-08T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "paperId": null,
+      "mode": "self",
+      "subject": "机器人",
+      "score": 2,
+      "total": 4,
+      "wrongQuestionIds": [
+        14,
+        15
+      ],
+      "detail": [
+        {
+          "questionId": 13,
+          "selected": "沿身体传播的曲率波",
+          "correct": true
+        },
+        {
+          "questionId": 14,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 15,
+          "selected": "通过性必然下降",
+          "correct": false
+        },
+        {
+          "questionId": 16,
+          "selected": "剥离方向一致",
+          "correct": true
+        }
+      ],
+      "durationSec": 420,
+      "createdAt": "2026-11-09T15:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "paperId": 2,
+      "mode": "assigned",
+      "subject": "机械设计",
+      "score": 50,
+      "total": 100,
+      "correctCount": 3,
+      "questionCount": 6,
+      "wrongQuestionIds": [
+        9,
+        11,
+        14
+      ],
+      "detail": [
+        {
+          "questionId": 7,
+          "selected": "剪应力",
+          "correct": true
+        },
+        {
+          "questionId": 9,
+          "selected": "中性轴附近",
+          "correct": false
+        },
+        {
+          "questionId": 11,
+          "selected": "表面吸声材料厚度",
+          "correct": false
+        },
+        {
+          "questionId": 13,
+          "selected": "沿身体传播的曲率波",
+          "correct": true
+        },
+        {
+          "questionId": 14,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 16,
+          "selected": "剥离方向一致",
+          "correct": true
+        }
+      ],
+      "durationSec": 900,
+      "createdAt": "2026-11-10T11:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "paperId": null,
+      "mode": "self",
+      "subject": "仿生学",
+      "score": 2,
+      "total": 4,
+      "wrongQuestionIds": [
+        4,
+        5
+      ],
+      "detail": [
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        },
+        {
+          "questionId": 3,
+          "selected": "Cassie-Baxter 复合界面",
+          "correct": true
+        },
+        {
+          "questionId": 4,
+          "selected": "80–100",
+          "correct": false
+        },
+        {
+          "questionId": 5,
+          "selected": "正确",
+          "correct": false
+        }
+      ],
+      "durationSec": 360,
+      "createdAt": "2026-11-10T18:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "paperId": null,
+      "mode": "self",
+      "subject": "机械设计",
+      "score": 3,
+      "total": 5,
+      "wrongQuestionIds": [
+        8,
+        10
+      ],
+      "detail": [
+        {
+          "questionId": 7,
+          "selected": "剪应力",
+          "correct": true
+        },
+        {
+          "questionId": 8,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 9,
+          "selected": "远离中性轴",
+          "correct": true
+        },
+        {
+          "questionId": 10,
+          "selected": "材料屈服",
+          "correct": false
+        },
+        {
+          "questionId": 18,
+          "selected": "加嵌件或局部补强",
+          "correct": true
+        }
+      ],
+      "durationSec": 510,
+      "createdAt": "2026-11-11T09:00:00.000Z"
+    },
+    {
+      "userId": 1,
+      "paperId": null,
+      "mode": "self",
+      "subject": "仿生学",
+      "score": 2,
+      "total": 5,
+      "wrongQuestionIds": [
+        3,
+        2,
+        6
+      ],
+      "detail": [
+        {
+          "questionId": 4,
+          "selected": "15–20",
+          "correct": true
+        },
+        {
+          "questionId": 3,
+          "selected": "牛顿粘性膜",
+          "correct": false
+        },
+        {
+          "questionId": 19,
+          "selected": "Wenzel",
+          "correct": true
+        },
+        {
+          "questionId": 2,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 6,
+          "selected": "发射功率",
+          "correct": false
+        }
+      ],
+      "durationSec": 73,
+      "createdAt": "2026-11-11T10:32:40.284Z",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "paperId": 4,
+      "mode": "assigned",
+      "subject": "仿生学",
+      "score": 40,
+      "total": 80,
+      "correctCount": 1,
+      "questionCount": 2,
+      "wrongQuestionIds": [
+        2
+      ],
+      "detail": [
+        {
+          "questionId": 2,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        }
+      ],
+      "durationSec": 28,
+      "createdAt": "2026-11-12T12:26:25.827Z",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "paperId": 4,
+      "mode": "assigned",
+      "subject": "仿生学",
+      "score": 80,
+      "total": 80,
+      "correctCount": 2,
+      "questionCount": 2,
+      "wrongQuestionIds": [],
+      "detail": [
+        {
+          "questionId": 2,
+          "selected": "错误",
+          "correct": true
+        },
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        }
+      ],
+      "durationSec": 8,
+      "createdAt": "2026-11-12T12:27:03.909Z",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "paperId": 4,
+      "mode": "assigned",
+      "subject": "仿生学",
+      "score": 48,
+      "total": 80,
+      "correctCount": 3,
+      "questionCount": 5,
+      "wrongQuestionIds": [
+        26,
+        27
+      ],
+      "detail": [
+        {
+          "questionId": 24,
+          "selected": "逐步抬起边缘形成剥离",
+          "correct": true
+        },
+        {
+          "questionId": 25,
+          "selected": "正确",
+          "correct": true
+        },
+        {
+          "questionId": 26,
+          "selected": "让所有微柱刚度无限增大",
+          "correct": false
+        },
+        {
+          "questionId": 27,
+          "selected": "产生液态黏胶",
+          "correct": false
+        },
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        }
+      ],
+      "durationSec": 9,
+      "createdAt": "2026-11-12T12:39:35.824Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "paperId": 1,
+      "mode": "assigned",
+      "subject": "仿生学",
+      "score": 60,
+      "total": 100,
+      "correctCount": 3,
+      "questionCount": 5,
+      "wrongQuestionIds": [
+        2,
+        19
+      ],
+      "detail": [
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        },
+        {
+          "questionId": 2,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 3,
+          "selected": "Cassie-Baxter 复合界面",
+          "correct": true
+        },
+        {
+          "questionId": 4,
+          "selected": "15–20",
+          "correct": true
+        },
+        {
+          "questionId": 19,
+          "selected": "Marangoni",
+          "correct": false
+        }
+      ],
+      "durationSec": 16,
+      "createdAt": "2026-11-12T12:51:05.355Z",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "paperId": 4,
+      "mode": "assigned",
+      "subject": "仿生学",
+      "score": 32,
+      "total": 80,
+      "correctCount": 2,
+      "questionCount": 5,
+      "wrongQuestionIds": [
+        26,
+        27,
+        25
+      ],
+      "detail": [
+        {
+          "questionId": 26,
+          "selected": "让所有微柱刚度无限增大",
+          "correct": false
+        },
+        {
+          "questionId": 27,
+          "selected": "产生液态黏胶",
+          "correct": false
+        },
+        {
+          "questionId": 1,
+          "selected": "25°–30°",
+          "correct": true
+        },
+        {
+          "questionId": 24,
+          "selected": "逐步抬起边缘形成剥离",
+          "correct": true
+        },
+        {
+          "questionId": 25,
+          "selected": "错误",
+          "correct": false
+        }
+      ],
+      "durationSec": 38,
+      "createdAt": "2026-11-13T06:16:33.014Z",
+      "id": 11
+    }
+  ],
+  "pointLogs": [
+    {
+      "id": 1794400000500,
+      "userId": 1,
+      "type": "earn",
+      "amount": 500,
+      "reason": "给林同学充值500积分",
+      "createdAt": "2026-11-11T13:56:00.000Z"
+    },
+    {
+      "id": 1794395633435,
+      "userId": 1,
+      "type": "claim",
+      "amount": 20,
+      "reason": "每日领积分",
+      "createdAt": "2026-11-11T11:13:52.774Z"
+    },
+    {
+      "createdAt": "2026-11-11T19:15:26.7193630+08:00",
+      "type": "claim",
+      "id": 373593,
+      "userId": 1,
+      "amount": 20,
+      "reason": "每日领积分"
+    },
+    {
+      "id": 1794398729916,
+      "userId": 1,
+      "type": "earn",
+      "amount": 10,
+      "reason": "完成路径节点：湍流边界层与沟槽减阻",
+      "createdAt": "2026-11-11T12:05:29.454Z"
+    },
+    {
+      "id": 1794398739847,
+      "userId": 1,
+      "type": "earn",
+      "amount": 10,
+      "reason": "完成路径节点：湍流边界层与沟槽减阻",
+      "createdAt": "2026-11-11T12:05:39.793Z"
+    },
+    {
+      "id": 1794405561973,
+      "userId": 1,
+      "type": "spend",
+      "amount": -30,
+      "reason": "兑换：问答次数包",
+      "createdAt": "2026-11-11T13:59:21.349Z"
+    },
+    {
+      "id": 1794486386722,
+      "userId": 1,
+      "type": "earn",
+      "amount": 15,
+      "reason": "完成答题智测",
+      "createdAt": "2026-11-12T12:26:26.004Z"
+    },
+    {
+      "id": 1794486424852,
+      "userId": 1,
+      "type": "earn",
+      "amount": 15,
+      "reason": "完成答题智测",
+      "createdAt": "2026-11-12T12:27:04.036Z"
+    },
+    {
+      "id": 1794487176471,
+      "userId": 1,
+      "type": "earn",
+      "amount": 15,
+      "reason": "完成答题智测",
+      "createdAt": "2026-11-12T12:39:35.921Z"
+    },
+    {
+      "id": 1794487866356,
+      "userId": 1,
+      "type": "earn",
+      "amount": 15,
+      "reason": "完成答题智测",
+      "createdAt": "2026-11-12T12:51:05.510Z"
+    },
+    {
+      "id": 1794550593477,
+      "userId": 1,
+      "type": "earn",
+      "amount": 15,
+      "reason": "完成答题智测",
+      "createdAt": "2026-11-13T06:16:33.109Z"
+    },
+    {
+      "id": 1794550805590,
+      "userId": 1,
+      "type": "claim",
+      "amount": 20,
+      "reason": "每日领积分",
+      "createdAt": "2026-11-13T06:20:04.939Z"
+    },
+    {
+      "id": 1794551105135,
+      "userId": 1,
+      "type": "spend",
+      "amount": -30,
+      "reason": "兑换：问答次数包",
+      "createdAt": "2026-11-13T06:25:04.729Z"
+    },
+    {
+      "id": 1794551115307,
+      "userId": 1,
+      "type": "spend",
+      "amount": -25,
+      "reason": "兑换：学习道具 · 复习卡",
+      "createdAt": "2026-11-13T06:25:14.701Z"
+    }
+  ],
+  "teachingRecords": [
+    {
+      "id": 1,
+      "title": "干黏附机理与剥离角探究",
+      "method": "案例导入 · 探究式教学",
+      "date": "2026-11-12T09:00:00.000Z",
+      "durationMin": 90,
+      "attendees": 42,
+      "summary": "完成关键参数辨析，小组能解释预压力与脱附角的作用。"
+    },
+    {
+      "id": 2,
+      "title": "蜂巢夹层结构映射工作坊",
+      "method": "对比教学 · 小组协作",
+      "date": "2026-11-11T03:00:00.000Z",
+      "durationMin": 90,
+      "attendees": 38,
+      "summary": "围绕面板屈曲与芯层剪切完成方案对照。"
+    },
+    {
+      "id": 3,
+      "title": "湍流沟槽减阻参数设计",
+      "method": "问题驱动 · 参数估算",
+      "date": "2026-11-09T06:00:00.000Z",
+      "durationMin": 45,
+      "attendees": 40,
+      "summary": "学生基于无量纲间距完成初步选型。"
+    },
+    {
+      "id": 4,
+      "title": "仿生结构工程应用讨论",
+      "method": "研讨式教学 · 同伴互评",
+      "date": "2026-11-07T01:00:00.000Z",
+      "durationMin": 90,
+      "attendees": 36,
+      "summary": "完成壁虎足端与爬壁机器人应用的设计评议。"
+    },
+    {
+      "id": 5,
+      "title": "阶段设计成果点评",
+      "method": "形成性评价 · 迭代反馈",
+      "date": "2026-11-05T05:00:00.000Z",
+      "durationMin": 60,
+      "attendees": 40,
+      "summary": "针对参数依据和验证方法给出修改建议。"
+    }
+  ],
+  "tutoringRecords": [
+    {
+      "id": 1,
+      "studentName": "林知衡",
+      "topic": "干黏附在潮湿表面的适用边界",
+      "method": "一对一机理梳理",
+      "date": "2026-11-12T07:30:00.000Z",
+      "durationMin": 30,
+      "result": "能区分干燥接触与液膜影响，补充了失效条件。",
+      "followUp": "下次提交足端材料对比表。"
+    },
+    {
+      "id": 2,
+      "studentName": "陈予安",
+      "topic": "夹层结构的芯层剪切校核",
+      "method": "案例对照辅导",
+      "date": "2026-11-11T08:00:00.000Z",
+      "durationMin": 25,
+      "result": "已能根据载荷路径选择面板与芯层校核项。",
+      "followUp": "完成蜂窝壁板参数计算。"
+    },
+    {
+      "id": 3,
+      "studentName": "赵景行",
+      "topic": "无量纲沟槽间距选取",
+      "method": "习题讲评",
+      "date": "2026-11-10T02:00:00.000Z",
+      "durationMin": 20,
+      "result": "掌握 s+ 的使用条件，理解超出区间后的增阻风险。",
+      "followUp": "用另一组流速参数复算。"
+    },
+    {
+      "id": 4,
+      "studentName": "周予墨",
+      "topic": "蛇形机器人步态与摩擦各向异性",
+      "method": "项目答疑",
+      "date": "2026-11-08T06:30:00.000Z",
+      "durationMin": 35,
+      "result": "建立曲率波参数与推进方向的联系。",
+      "followUp": "补充步态验证方案。"
+    },
+    {
+      "id": 5,
+      "studentName": "沈星河",
+      "topic": "仿生方案的工程约束表达",
+      "method": "设计评审",
+      "date": "2026-11-06T09:00:00.000Z",
+      "durationMin": 30,
+      "result": "把重量、行程和环境约束写入方案比较表。",
+      "followUp": "提交候选方案权衡说明。"
+    }
+  ]
+}

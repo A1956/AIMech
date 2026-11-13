@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#0B1220"/>
+  <path d="M80 180c120-80 360-80 480 0-120 80-360 80-480 0z" fill="rgba(14,124,134,0.25)" stroke="#0E7C86" stroke-width="2"/>
+  <g stroke="#7BE0AD" stroke-width="2" opacity="0.8">
+    <path d="M160 140v80M190 135v90M220 132v96M250 130v100M280 130v100M310 132v96M340 135v90M370 140v80M400 145v70M430 150v60"/>
+  </g>
+  <text x="40" y="48" fill="#E6EDF5" font-size="22" font-family="Inter,sans-serif" font-weight="600">Ï; · þÞŸý</text>
+</svg>

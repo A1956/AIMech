@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.server.example
+.eslintcache
+
+# 案例短视频的实拍源片（体积大，只本地保留；成片在 public/media/cases）
+scripts/footage/
+
+# 本机 Copilot / 编辑器规则，不随项目公开
+.cursorrules
+.rules
+*.rules

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#0B1220"/>
+  <path d="M80 220c80-40 160-90 240-110 70-18 140-10 200 30 40 28 70 70 90 110H80z" fill="rgba(14,124,134,0.28)" stroke="#0E7C86" stroke-width="2"/>
+  <path d="M120 230c100-50 200-95 300-105" stroke="#7BE0AD" stroke-width="2.5" fill="none"/>
+  <path d="M200 250c80-30 160-55 250-60" stroke="#7BE0AD" stroke-width="1.5" opacity="0.5" fill="none"/>
+  <text x="40" y="48" fill="#E6EDF5" font-size="22" font-family="Inter,sans-serif" font-weight="600">Ïj · à™b</text>
+</svg>
