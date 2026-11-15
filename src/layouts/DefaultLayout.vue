@@ -1,16 +1,17 @@
 <script setup>
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { Fold, Expand, Moon, Sunny } from '@element-plus/icons-vue'
+import { Coin, Fold, Expand, Moon, Sunny } from '@element-plus/icons-vue'
 import BrandLogo from '@/components/common/BrandLogo.vue'
 import SmartIcon from '@/components/common/SmartIcon.vue'
 import ThemeFab from '@/components/common/ThemeFab.vue'
+import UserAvatar from '@/components/common/UserAvatar.vue'
 import { useAuth } from '@/composables/useAuth'
 import { usePermission } from '@/composables/usePermission'
 import { usePoints } from '@/composables/usePoints'
 import { useTheme } from '@/composables/useTheme'
 import { NAV_LABELS, PRODUCT_NAME, PRODUCT_TAGLINE } from '@/types/labels'
-import { initials, peerName } from '@/utils/format'
+import { peerName } from '@/utils/format'
 
 const SIDEBAR_KEY = 'bio-sidebar'
 const route = useRoute()
@@ -18,7 +19,7 @@ const router = useRouter()
 const { profile, logout } = useAuth()
 const { isTeacher, isStudent } = usePermission()
 const { isDark, toggleTheme } = useTheme()
-const { levelLabel, refreshPoints } = usePoints()
+const { levelLabel, points, refreshPoints } = usePoints()
 
 const drawer = ref(false)
 const userCollapsed = ref(localStorage.getItem(SIDEBAR_KEY) === '1')
@@ -39,7 +40,7 @@ const navItems = computed(() => {
       { to: '/profile', label: NAV_LABELS.profile, icon: 'profile' },
     ]
   }
-  // 积分兑换 / 智慧档案收入头像悬浮菜单
+  // 积分商城与智慧档案由主导航和头像点击菜单访问
   return [
     { to: '/', label: NAV_LABELS.home, icon: 'home' },
     { to: '/tutor', label: 'AI助教', icon: 'tutor' },
@@ -154,10 +155,28 @@ onMounted(() => {
           </router-link>
         </nav>
 
+        <div
+          v-if="isStudent"
+          class="hidden shrink-0 border-l border-[color:var(--bio-line)] pl-2 lg:block xl:pl-3"
+        >
+          <router-link
+            to="/rewards"
+            class="flex items-center gap-1.5 rounded-full px-2 py-1.5 text-sm text-mist transition-colors hover:bg-teal/10 hover:text-teal xl:gap-2 xl:px-3"
+            :class="{ 'bg-teal/10 text-teal': route.path.startsWith('/rewards') }"
+            :aria-label="`${NAV_LABELS.rewards}，当前${points}积分`"
+          >
+            <el-icon :size="18"><Coin /></el-icon>
+            <span>{{ NAV_LABELS.rewards }}</span>
+            <span class="hidden rounded-full bg-teal/10 px-2 py-0.5 text-xs font-semibold text-teal 2xl:inline-flex">
+              {{ points }}
+            </span>
+          </router-link>
+        </div>
+
         <div class="ml-auto flex shrink-0 items-center gap-2 sm:gap-3">
-          <!-- 学生：等级 | 头像 | 姓名；悬浮可选积分兑换 / 智慧档案 -->
+          <!-- 学生：等级 | 头像 | 姓名；点击头像可打开积分商城 / 智慧档案 -->
           <template v-if="isStudent">
-            <el-dropdown trigger="hover" placement="bottom-end" @command="onAvatarCommand">
+            <el-dropdown trigger="click" placement="bottom-end" @command="onAvatarCommand">
               <button
                 type="button"
                 class="header-avatar-btn flex shrink-0 items-center gap-2 outline-none focus-visible:ring-2 focus-visible:ring-teal/40"
@@ -169,11 +188,7 @@ onMounted(() => {
                 >
                   {{ levelLabel }}
                 </span>
-                <span
-                  class="header-avatar inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal/20 text-sm font-semibold leading-none text-teal"
-                >
-                  {{ initials(profile?.name) }}
-                </span>
+                <UserAvatar :avatar="profile?.avatar" :name="profile?.name" :student="isStudent" :size="40" />
                 <span class="hidden max-w-[100px] truncate text-[0.9375rem] font-medium sm:inline">
                   {{ headerDisplayName }}
                 </span>
@@ -187,11 +202,7 @@ onMounted(() => {
             </el-dropdown>
           </template>
           <div v-else class="flex items-center gap-2.5">
-            <span
-              class="header-avatar inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-teal/20 text-sm font-semibold leading-none text-teal"
-            >
-              {{ initials(profile?.name) }}
-            </span>
+            <UserAvatar :avatar="profile?.avatar" :name="profile?.name" :size="36" />
             <div class="hidden leading-tight sm:block">
               <p class="max-w-[120px] truncate text-sm font-medium">{{ headerDisplayName }}</p>
               <span class="inline-flex rounded-md bg-accent/15 px-1.5 py-0.5 text-[10px] font-medium text-accent">
@@ -268,6 +279,20 @@ onMounted(() => {
         </button>
       </nav>
       <div v-if="isStudent" class="mt-4 border-t border-[color:var(--bio-line)] pt-4 text-sm">
+        <button
+          type="button"
+          class="nav-link w-full justify-between"
+          :class="{ active: route.path.startsWith('/rewards') }"
+          @click="go('/rewards')"
+        >
+          <span class="flex items-center gap-2">
+            <el-icon><Coin /></el-icon>
+            <span>{{ NAV_LABELS.rewards }}</span>
+          </span>
+          <span class="rounded-full bg-teal/10 px-2 py-0.5 text-xs font-semibold text-teal">
+            {{ points }}
+          </span>
+        </button>
         <p class="text-mist">
           当前等级 <span class="font-semibold text-teal">{{ levelLabel }}</span>
         </p>

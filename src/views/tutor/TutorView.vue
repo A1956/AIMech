@@ -222,9 +222,9 @@ const send = async (preset = '') => {
         })
         try {
           await ElMessageBox.confirm(
-            `${quota.reason || '今日免费与兑换余量均已用完。'}是否前往积分兑换？`,
+            `${quota.reason || '今日免费问答与已购额度均已用完。'}是否前往积分商城？`,
             '无法提问',
-            { type: 'warning', confirmButtonText: '去兑换', cancelButtonText: '知道了' },
+            { type: 'warning', confirmButtonText: '去商城', cancelButtonText: '知道了' },
           )
           router.push('/rewards')
         } catch {

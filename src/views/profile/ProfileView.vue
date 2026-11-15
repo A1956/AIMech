@@ -1,26 +1,33 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
+import { ElMessage } from 'element-plus'
+import { Camera } from '@element-plus/icons-vue'
 import { fetchCases } from '@/api/case'
 import { fetchFavorites } from '@/api/favorite'
 import { fetchQuizAttempts } from '@/api/quiz'
 import { fetchRecords } from '@/api/record'
 import { fetchTeachingRecords, fetchTutoringRecords } from '@/api/teacher'
+import { patchUser } from '@/api/user'
 import AnimatedNumber from '@/components/business/AnimatedNumber.vue'
 import CaseCard from '@/components/business/CaseCard.vue'
 import StudyChart from '@/components/business/StudyChart.vue'
 import TeacherArchive from '@/components/business/TeacherArchive.vue'
 import PageHeader from '@/components/common/PageHeader.vue'
 import StateView from '@/components/common/StateView.vue'
+import UserAvatar from '@/components/common/UserAvatar.vue'
 import { useAuth } from '@/composables/useAuth'
 import { usePoints } from '@/composables/usePoints'
 import { useTheme } from '@/composables/useTheme'
 import { useFavoriteStore } from '@/stores/favorite'
+import { useUserStore } from '@/stores/user'
 import { DAILY_LEARNING_DRAW_PRIZES, INVENTORY_LABELS, POINTS_RULES } from '@/types/points'
-import { formatDate, initials, peerName, sumMinutes } from '@/utils/format'
+import { compressAvatarImage, STUDENT_DEFAULT_AVATAR } from '@/utils/avatar'
+import { formatDate, peerName, sumMinutes } from '@/utils/format'
 
 const { profile, isTeacher } = useAuth()
 const { theme } = useTheme()
 const favoriteStore = useFavoriteStore()
+const userStore = useUserStore()
 const {
   points,
   chatQuota,
@@ -47,6 +54,55 @@ const drawOddsText = computed(() =>
   DAILY_LEARNING_DRAW_PRIZES.map((prize) => `${prize.label} ${prize.probability}%`).join(' · '),
 )
 const drawing = ref(false)
+const avatarDialog = ref(false)
+const selectedAvatar = ref('')
+const avatarSaving = ref(false)
+const avatarProcessing = ref(false)
+const avatarInput = ref(null)
+const avatarBusy = computed(() => avatarSaving.value || avatarProcessing.value)
+
+const openAvatarDialog = () => {
+  selectedAvatar.value =
+    profile.value?.avatar || (isTeacher.value ? 'initials' : STUDENT_DEFAULT_AVATAR)
+  avatarDialog.value = true
+}
+
+const persistAvatar = async (avatar) => {
+  if (!profile.value?.id) {
+    ElMessage.error('登录状态已失效，请重新登录')
+    return
+  }
+  avatarSaving.value = true
+  try {
+    const updatedUser = await patchUser(profile.value.id, { avatar })
+    userStore.setProfile(updatedUser)
+    avatarDialog.value = false
+    ElMessage.success('头像已更新')
+  } catch (err) {
+    ElMessage.error(err.userMessage || err.message || '保存头像失败')
+  } finally {
+    avatarSaving.value = false
+  }
+}
+
+const saveSelectedAvatar = () => persistAvatar(selectedAvatar.value)
+
+const chooseAvatarFile = () => avatarInput.value?.click()
+
+const onAvatarFileChange = async (event) => {
+  const file = event.target.files?.[0]
+  if (!file) return
+  avatarProcessing.value = true
+  try {
+    const avatar = await compressAvatarImage(file)
+    await persistAvatar(avatar)
+  } catch (err) {
+    ElMessage.error(err.userMessage || err.message || '处理头像失败')
+  } finally {
+    avatarProcessing.value = false
+    event.target.value = ''
+  }
+}
 
 const onDrawLearningItem = async () => {
   if (drawing.value || drewLearningItemToday.value) return
@@ -200,9 +256,12 @@ onMounted(load)
 
       <section class="bio-card mb-5 flex flex-wrap items-center justify-between gap-4 p-5">
         <div class="flex flex-wrap items-center gap-4">
-          <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-teal/30 text-xl font-semibold">
-            {{ initials(profile?.name) }}
-          </div>
+          <UserAvatar
+            :avatar="profile?.avatar"
+            :name="profile?.name"
+            :student="!isTeacher"
+            :size="56"
+          />
           <div>
             <h2 class="text-lg font-semibold">{{ isTeacher ? profile?.name : peerName(profile?.name) }}</h2>
             <p class="text-sm text-mist">
@@ -212,12 +271,13 @@ onMounted(load)
               </template>
             </p>
           </div>
+          <el-button :icon="Camera" plain @click="openAvatarDialog">设置头像</el-button>
         </div>
         <router-link v-if="isTeacher" to="/admin?tab=insights" class="text-sm text-accent hover:underline">
           打开智能学情 →
         </router-link>
         <router-link v-else to="/rewards" class="text-sm text-accent hover:underline">
-          去积分兑换 →
+          去积分商城 →
         </router-link>
       </section>
 
@@ -352,5 +412,56 @@ onMounted(load)
         </StateView>
       </section>
     </StateView>
+
+    <el-dialog
+      v-model="avatarDialog"
+      title="设置头像"
+      width="min(420px, 92vw)"
+      :close-on-click-modal="!avatarBusy"
+      :close-on-press-escape="!avatarBusy"
+      :show-close="!avatarBusy"
+    >
+      <p class="mb-4 text-sm text-mist">选择默认头像风格，或上传一张自己的图片。</p>
+      <div class="grid grid-cols-2 gap-3" role="radiogroup" aria-label="默认头像">
+        <button
+          v-for="choice in [
+            { value: STUDENT_DEFAULT_AVATAR, label: '默认人像' },
+            { value: 'initials', label: '姓氏汉字' },
+          ]"
+          :key="choice.value"
+          type="button"
+          role="radio"
+          :aria-checked="selectedAvatar === choice.value"
+          class="flex flex-col items-center gap-2 rounded-xl border p-4 transition"
+          :class="
+            selectedAvatar === choice.value
+              ? 'border-teal bg-teal/10'
+              : 'border-white/10 hover:border-teal/50'
+          "
+          :disabled="avatarBusy"
+          @click="selectedAvatar = choice.value"
+        >
+          <UserAvatar :avatar="choice.value" :name="profile?.name" :size="64" />
+          <span class="text-sm font-medium">{{ choice.label }}</span>
+        </button>
+      </div>
+      <input
+        ref="avatarInput"
+        type="file"
+        accept="image/png,image/jpeg,image/webp"
+        class="hidden"
+        @change="onAvatarFileChange"
+      >
+      <p class="mt-4 text-xs leading-5 text-mist">支持 PNG、JPEG、WebP；原图不超过 5MB，头像最长边缩放至 256px 并压缩到 200KB 内。</p>
+      <template #footer>
+        <div class="flex flex-wrap justify-end gap-2">
+          <el-button :disabled="avatarBusy" @click="chooseAvatarFile">上传图片</el-button>
+          <el-button :disabled="avatarBusy" @click="avatarDialog = false">取消</el-button>
+          <el-button type="primary" :loading="avatarSaving" :disabled="avatarBusy" @click="saveSelectedAvatar">
+            保存头像
+          </el-button>
+        </div>
+      </template>
+    </el-dialog>
   </div>
 </template>

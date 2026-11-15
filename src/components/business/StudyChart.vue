@@ -16,18 +16,50 @@ const props = defineProps({
 
 const { theme } = useTheme()
 const elRef = ref(null)
+const isVisible = ref(false)
 let chart = null
+let observer = null
+let renderFrame = 0
 
 const render = () => {
-  if (!elRef.value) return
+  if (!elRef.value || !isVisible.value) return
   if (!chart) chart = echarts.init(elRef.value, null, { renderer: 'canvas' })
-  chart.setOption(props.option, true)
+  chart.setOption(
+    {
+      animation: !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+      animationDuration: 1400,
+      animationDurationUpdate: 800,
+      animationEasing: 'cubicOut',
+      ...props.option,
+    },
+    true,
+  )
 }
 
 const onResize = () => chart?.resize()
 
 onMounted(() => {
-  render()
+  const reveal = () => {
+    isVisible.value = true
+    observer?.disconnect()
+    if (renderFrame) cancelAnimationFrame(renderFrame)
+    renderFrame = requestAnimationFrame(() => {
+      renderFrame = 0
+      render()
+    })
+  }
+
+  if (typeof IntersectionObserver === 'undefined') {
+    reveal()
+  } else {
+    observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) reveal()
+      },
+      { rootMargin: '80px 0px' },
+    )
+    observer.observe(elRef.value)
+  }
   window.addEventListener('resize', onResize)
 })
 
@@ -39,6 +71,10 @@ watch(theme, () => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', onResize)
+  observer?.disconnect()
+  observer = null
+  if (renderFrame) cancelAnimationFrame(renderFrame)
+  renderFrame = 0
   chart?.dispose()
   chart = null
 })

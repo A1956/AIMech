@@ -1,10 +1,9 @@
 <script setup>
-import { reactive, ref } from 'vue'
+import { nextTick, reactive, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { Moon, Sunny } from '@element-plus/icons-vue'
 import BrandLogo from '@/components/common/BrandLogo.vue'
-import HeroMedia from '@/components/common/HeroMedia.vue'
 import { useAuth } from '@/composables/useAuth'
 import { useTheme } from '@/composables/useTheme'
 import { PRODUCT_NAME, PRODUCT_TAGLINE } from '@/types/labels'
@@ -15,7 +14,10 @@ const { login } = useAuth()
 const { isDark, toggleTheme } = useTheme()
 
 const loading = ref(false)
-const showPhantom = ref(false)
+const isPlaying = ref(false)
+const videoReady = ref(false)
+const videoRef = ref(null)
+const playbackController = ref(null)
 const formRef = ref(null)
 const form = reactive({
   username: 'stu',
@@ -31,25 +33,76 @@ const rules = {
 
 const resolveHome = (role) => (role === 'teacher' ? '/admin' : '/')
 
-const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+const waitForVideoEnd = (video, signal) =>
+  new Promise((resolve, reject) => {
+    const cleanup = () => {
+      video.removeEventListener('ended', onEnded)
+      video.removeEventListener('error', onError)
+      signal.removeEventListener('abort', onAbort)
+    }
+    const onEnded = () => {
+      cleanup()
+      resolve()
+    }
+    const onError = () => {
+      cleanup()
+      reject(new Error('登录动画视频播放失败'))
+    }
+    const onAbort = () => {
+      cleanup()
+      resolve()
+    }
+    video.addEventListener('ended', onEnded, { once: true })
+    video.addEventListener('error', onError, { once: true })
+    signal.addEventListener('abort', onAbort, { once: true })
+  })
+
+const playLoginVideo = async (signal) => {
+  await nextTick()
+  const video = videoRef.value
+  if (!video) throw new Error('登录动画视频未能加载')
+
+  await Promise.all([video.play(), waitForVideoEnd(video, signal)])
+}
+
+const resetLoginAnimation = () => {
+  playbackController.value?.abort()
+  videoRef.value?.pause()
+  isPlaying.value = false
+  videoReady.value = false
+}
 
 const submit = async () => {
   const valid = await formRef.value?.validate().catch(() => false)
   if (!valid || loading.value) return
+  const credentials = { ...form }
   loading.value = true
+  isPlaying.value = true
+  videoReady.value = false
+  const controller = new AbortController()
+  playbackController.value = controller
   try {
-    await login({ ...form })
-    showPhantom.value = true
-    await wait(520)
+    const videoPlayback = playLoginVideo(controller.signal).then(
+      () => null,
+      (error) => error,
+    )
+    await login(credentials)
+    const videoError = await videoPlayback
+    if (videoError) {
+      resetLoginAnimation()
+      ElMessage.warning('登录动画无法播放，正在继续进入平台')
+    }
     const queried = typeof route.query.redirect === 'string' ? route.query.redirect : ''
-    let redirect = queried || resolveHome(form.role)
-    if (form.role === 'student' && redirect.startsWith('/admin')) redirect = '/'
-    if (form.role === 'teacher' && !queried) redirect = '/admin'
-    await router.replace(redirect || resolveHome(form.role))
+    let redirect = queried || resolveHome(credentials.role)
+    if (credentials.role === 'student' && redirect.startsWith('/admin')) redirect = '/'
+    if (credentials.role === 'teacher' && !queried) redirect = '/admin'
+    await router.replace(redirect || resolveHome(credentials.role))
   } catch (err) {
-    showPhantom.value = false
+    resetLoginAnimation()
     ElMessage.error(err.message || err.userMessage || '登录失败')
   } finally {
+    controller.abort()
+    playbackController.value = null
     loading.value = false
   }
 }
@@ -63,8 +116,6 @@ const fillDemo = (role) => {
 
 <template>
   <div class="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-10">
-    <div v-if="showPhantom" class="login-green-phantom pointer-events-none" aria-hidden="true" />
-
     <button
       type="button"
       class="theme-toggle absolute right-4 top-4 z-10 flex items-center gap-1 text-sm"
@@ -88,7 +139,26 @@ const fillDemo = (role) => {
           <p class="mt-3 max-w-md text-sm leading-7 text-mist">
             面向机械与机器人专业的仿生设计学习平台。用案例机理、参数表和智慧方案推荐，把生物灵感落到可校核的机械方案。
           </p>
-          <HeroMedia class-name="mt-8 h-44 w-full rounded-2xl object-cover shadow-lift" />
+          <div class="relative mt-8 h-44 w-full overflow-hidden rounded-2xl shadow-lift">
+            <img
+              src="/media/login-mec.jpg"
+              alt="MEC 齿轮机构"
+              class="absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ease-in-out"
+              :class="videoReady ? 'opacity-0' : 'opacity-100'"
+            />
+            <video
+              v-if="isPlaying"
+              ref="videoRef"
+              src="/media/login-chilun.mp4"
+              muted
+              playsinline
+              preload="auto"
+              aria-hidden="true"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-300 ease-in-out"
+              :class="videoReady ? 'opacity-100' : 'opacity-0'"
+              @canplay="videoReady = true"
+            />
+          </div>
         </div>
         <ul class="mt-6 space-y-3 text-sm text-mist">
           <li class="flex gap-2"><span class="text-accent">●</span> 学生端：案例库 / 小智 / 答题智测 / 智能学习路径</li>
@@ -107,7 +177,7 @@ const fillDemo = (role) => {
         </div>
         <h2 class="text-xl font-semibold text-paper">按角色进入平台</h2>
         <p class="mt-1 text-sm text-mist">
-          学生进入学习空间；教师进入智能教学台。数据保存在本地 json-server。
+          学生进入学习空间；教师进入智能教学台。
         </p>
 
         <el-form ref="formRef" class="mt-6" :model="form" :rules="rules" label-position="top" @submit.prevent>

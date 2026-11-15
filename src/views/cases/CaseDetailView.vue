@@ -91,7 +91,7 @@ onMounted(load)
             <p class="mt-1 text-sm text-mist">消耗 40 积分可解锁本案例完整机理与参数表。</p>
           </div>
           <router-link to="/rewards">
-            <el-button type="warning">积分兑换解锁</el-button>
+            <el-button type="warning">使用积分解锁</el-button>
           </router-link>
         </div>
 

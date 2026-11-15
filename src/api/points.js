@@ -1,9 +1,19 @@
 import http from '@/api/http'
 import { fetchUser, patchUser } from '@/api/user'
 import { formatDay } from '@/utils/format'
-import { POINTS_RULES, REDEEM_OFFERS, pickDailyLearningDrawPrize } from '@/types/points'
+import {
+  POINTS_RULES,
+  PURCHASE_PAYMENT_TTL_MS,
+  PURCHASE_PACKAGES,
+  REDEEM_OFFERS,
+  pickDailyLearningDrawPrize,
+} from '@/types/points'
 
 const nextLogId = () => Date.now() + Math.floor(Math.random() * 1000)
+const nextOrderId = (prefix = 'order') =>
+  `${prefix}-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`
+const inFlightOrders = new Set()
+const orderError = (message) => Object.assign(new Error(message), { userMessage: message })
 
 const writeLog = async ({ userId, type, amount, reason }) => {
   const payload = {
@@ -28,6 +38,205 @@ export const fetchPointLogs = async (userId) => {
   return response.data || []
 }
 
+export const fetchPointOrders = async (userId) => {
+  const response = await http.get('/pointOrders', {
+    params: { userId, _sort: 'createdAt', _order: 'desc', _limit: 30 },
+    silent: true,
+  })
+  return response.data || []
+}
+
+const findOrderByRequestId = async (userId, requestId) => {
+  if (!requestId) return null
+  const response = await http.get('/pointOrders', {
+    params: { userId, requestId },
+    silent: true,
+  })
+  return response.data?.[0] || null
+}
+
+const fetchPointOrder = async (orderId) => {
+  const response = await http.get(`/pointOrders/${encodeURIComponent(orderId)}`, { silent: true })
+  return response.data
+}
+
+const patchPointOrder = async (orderId, patch) => {
+  const response = await http.patch(`/pointOrders/${encodeURIComponent(orderId)}`, patch, {
+    silent: true,
+  })
+  return response.data
+}
+
+const ensureOrderPointLog = async (order, amount, reason) => {
+  if (!amount) return
+  const existing = await http.get('/pointLogs', {
+    params: { userId: order.userId, orderId: order.id },
+    silent: true,
+  })
+  if (existing.data?.length) return existing.data[0]
+  const response = await http.post(
+    '/pointLogs',
+    {
+      id: nextLogId(),
+      userId: order.userId,
+      orderId: order.id,
+      type: amount < 0 ? 'spend' : 'purchase',
+      amount,
+      reason,
+      createdAt: new Date().toISOString(),
+    },
+    { silent: true },
+  )
+  return response.data
+}
+
+const applyOrderToUser = async (order, user) => {
+  const processedOrderIds = (user.processedPointOrderIds || []).map(String)
+  if (processedOrderIds.includes(String(order.id))) return user
+
+  const pointsDelta =
+    order.type === 'redemption' ? -Number(order.pointsCost || 0) : Number(order.pointsDelta || 0)
+  const points = Number(user.points || 0)
+  if (points + pointsDelta < 0) {
+    throw orderError(`积分不足，还需 ${Math.abs(pointsDelta) - points} 分`)
+  }
+
+  const patch = {
+    points: points + pointsDelta,
+    chatQuota: Number(user.chatQuota || 0) + Number(order.chatQuotaDelta || 0),
+    processedPointOrderIds: [...processedOrderIds, String(order.id)].slice(-100),
+  }
+
+  if (order.offerKind === 'inventory') {
+    patch.inventory = [...(user.inventory || []), order.inventoryItem]
+  } else if (order.offerKind === 'unlock_case') {
+    const caseId = Number(order.caseId)
+    if (!caseId) throw orderError('请选择要解锁的案例')
+    const unlocked = new Set(user.unlockedCaseIds || [])
+    if (unlocked.has(caseId)) throw orderError('该案例已解锁')
+    unlocked.add(caseId)
+    patch.unlockedCaseIds = [...unlocked]
+  }
+
+  return patchUser(order.userId, patch)
+}
+
+export const createPurchaseOrder = async (userId, packageId, requestId = nextOrderId('request')) => {
+  const product = PURCHASE_PACKAGES.find((item) => item.id === packageId)
+  if (!product) throw orderError('商品不存在')
+
+  const existing = await findOrderByRequestId(userId, requestId)
+  if (existing) return existing
+
+  const now = new Date().toISOString()
+  const order = {
+    id: nextOrderId('purchase'),
+    requestId,
+    userId,
+    type: 'purchase',
+    productId: product.id,
+    title: product.title,
+    amountCents: product.priceCents,
+    pointsDelta: product.points,
+    chatQuotaDelta: product.chatQuota,
+    status: 'pending',
+    paymentStatus: 'unpaid',
+    paymentMethod: 'experience',
+    createdAt: now,
+    expiresAt: new Date(Date.now() + PURCHASE_PAYMENT_TTL_MS).toISOString(),
+    updatedAt: now,
+  }
+  const response = await http.post('/pointOrders', order, { silent: true })
+  return response.data
+}
+
+export const preparePurchasePayment = async (orderId) => {
+  let order = await fetchPointOrder(orderId)
+  if (!['pending', 'processing'].includes(order.status)) return order
+
+  if (!order.expiresAt) {
+    order = await patchPointOrder(order.id, {
+      expiresAt: new Date(Date.now() + PURCHASE_PAYMENT_TTL_MS).toISOString(),
+      updatedAt: new Date().toISOString(),
+    })
+  }
+
+  const expiresAt = Date.parse(order.expiresAt)
+  if (!Number.isFinite(expiresAt)) throw orderError('订单有效期无效，请重新下单')
+  if (order.status === 'pending' && Date.now() >= expiresAt) {
+    order = await patchPointOrder(order.id, {
+      status: 'expired',
+      paymentStatus: 'expired',
+      expiredAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    })
+  }
+  return order
+}
+
+export const expirePurchaseOrder = async (orderId) => {
+  const order = await fetchPointOrder(orderId)
+  if (order.status !== 'pending') return order
+  const expiresAt = Date.parse(order.expiresAt)
+  if (!Number.isFinite(expiresAt)) throw orderError('订单有效期无效')
+  if (Date.now() < expiresAt) return order
+  return patchPointOrder(order.id, {
+    status: 'expired',
+    paymentStatus: 'expired',
+    expiredAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  })
+}
+
+export const completePurchaseExperience = async (orderId) => {
+  if (inFlightOrders.has(orderId)) throw orderError('订单正在处理中，请勿重复提交')
+  inFlightOrders.add(orderId)
+  try {
+    let order = await preparePurchasePayment(orderId)
+    if (order.status === 'experience_completed' || order.status === 'paid') {
+      return { order, user: await fetchUser(order.userId) }
+    }
+    if (order.status === 'expired') throw orderError('订单已过期，余额未变更')
+    if (!['pending', 'processing'].includes(order.status)) {
+      throw orderError('订单状态不允许完成')
+    }
+
+    if (order.status === 'pending' && Date.now() >= Date.parse(order.expiresAt)) {
+      order = await patchPointOrder(order.id, {
+        status: 'expired',
+        paymentStatus: 'expired',
+        expiredAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      })
+      throw orderError('订单已过期，余额未变更')
+    }
+
+    if (order.status === 'pending') {
+      order = await patchPointOrder(order.id, {
+        status: 'processing',
+        paymentStatus: 'experience_processing',
+        updatedAt: new Date().toISOString(),
+      })
+    }
+    const user = await fetchUser(order.userId)
+    const updatedUser = await applyOrderToUser(order, user)
+    await ensureOrderPointLog(
+      order,
+      Number(order.pointsDelta || 0),
+      `体验购买：${order.title}`,
+    )
+    const completedOrder = await patchPointOrder(order.id, {
+      status: 'experience_completed',
+      paymentStatus: 'experience_completed',
+      completedAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    })
+    return { order: completedOrder, user: updatedUser }
+  } finally {
+    inFlightOrders.delete(orderId)
+  }
+}
+
 /** 同步用户积分相关字段 */
 export const syncPointsProfile = async (userId) => {
   const user = await fetchUser(userId)
@@ -43,7 +252,7 @@ export const syncPointsProfile = async (userId) => {
   }
 }
 
-/** 每日抽取学习道具；json-server 演示环境不支持并发事务 */
+/** 每日抽取学习道具；本地数据服务不支持并发事务 */
 export const drawDailyLearningItem = async (userId, random = Math.random) => {
   const user = await fetchUser(userId)
   const today = formatDay(new Date())
@@ -99,53 +308,90 @@ export const earnPoints = async (userId, { amount, reason }) => {
 /**
  * 兑换权益
  * @param {number} userId
- * @param {{ offerId: string, caseId?: number }} options
+ * @param {{ offerId: string, caseId?: number, requestId?: string }} options
  */
-export const redeemOffer = async (userId, { offerId, caseId } = {}) => {
+export const redeemOffer = async (
+  userId,
+  { offerId, caseId, requestId = nextOrderId('redeem-request') } = {},
+) => {
   const offer = REDEEM_OFFERS.find((item) => item.id === offerId)
-  if (!offer) {
-    const err = new Error('兑换项不存在')
-    err.userMessage = '兑换项不存在'
-    throw err
+  if (!offer) throw orderError('兑换项不存在')
+
+  let order = await findOrderByRequestId(userId, requestId)
+  if (order && (order.productId !== offer.id || Number(order.caseId || 0) !== Number(caseId || 0))) {
+    throw orderError('重复提交标识已用于其他订单')
   }
-  const user = await fetchUser(userId)
-  const points = Number(user.points || 0)
-  if (points < offer.cost) {
-    const err = new Error('积分不足')
-    err.userMessage = `积分不足，还需 ${offer.cost - points} 分`
-    throw err
+  if (order?.status === 'completed') return fetchUser(userId)
+  if (order?.status === 'failed') throw orderError('该兑换订单已失败，请重新提交')
+
+  if (!order) {
+    const user = await fetchUser(userId)
+    const points = Number(user.points || 0)
+    if (points < offer.cost) {
+      throw orderError(`积分不足，还需 ${offer.cost - points} 分`)
+    }
+
+    if (offer.kind === 'unlock_case') {
+      const id = Number(caseId)
+      if (!id) throw orderError('请选择要解锁的案例')
+      if ((user.unlockedCaseIds || []).includes(id)) throw orderError('该案例已解锁')
+    }
+
+    const now = new Date().toISOString()
+    const response = await http.post(
+      '/pointOrders',
+      {
+        id: nextOrderId('redeem'),
+        requestId,
+        userId,
+        type: 'redemption',
+        productId: offer.id,
+        title: offer.title,
+        pointsCost: offer.cost,
+        pointsDelta: -offer.cost,
+        chatQuotaDelta: offer.kind === 'chat_pack' ? Number(offer.payload.amount || 0) : 0,
+        offerKind: offer.kind,
+        inventoryItem: offer.kind === 'inventory' ? offer.payload.item : null,
+        caseId: caseId ? Number(caseId) : null,
+        amountCents: 0,
+        status: 'pending',
+        paymentStatus: 'not_required',
+        createdAt: now,
+        updatedAt: now,
+      },
+      { silent: true },
+    )
+    order = response.data
   }
 
-  const patch = { points: points - offer.cost }
-  if (offer.kind === 'chat_pack') {
-    patch.chatQuota = Number(user.chatQuota || 0) + Number(offer.payload.amount || 0)
-  } else if (offer.kind === 'inventory') {
-    patch.inventory = [...(user.inventory || []), offer.payload.item]
-  } else if (offer.kind === 'unlock_case') {
-    const id = Number(caseId)
-    if (!id) {
-      const err = new Error('请选择要解锁的案例')
-      err.userMessage = '请选择要解锁的案例'
-      throw err
+  if (inFlightOrders.has(order.id)) throw orderError('兑换订单正在处理中，请勿重复提交')
+  inFlightOrders.add(order.id)
+  try {
+    if (order.status === 'pending') {
+      order = await patchPointOrder(order.id, {
+        status: 'processing',
+        updatedAt: new Date().toISOString(),
+      })
+    } else if (order.status !== 'processing') {
+      throw orderError('兑换订单状态无效')
     }
-    const unlocked = new Set(user.unlockedCaseIds || [])
-    if (unlocked.has(id)) {
-      const err = new Error('该案例已解锁')
-      err.userMessage = '该案例已解锁'
-      throw err
-    }
-    unlocked.add(id)
-    patch.unlockedCaseIds = [...unlocked]
-  }
 
-  const updated = await patchUser(userId, patch)
-  await writeLog({
-    userId,
-    type: 'spend',
-    amount: -offer.cost,
-    reason: `兑换：${offer.title}${caseId ? ` #${caseId}` : ''}`,
-  })
-  return updated
+    const user = await fetchUser(userId)
+    const updated = await applyOrderToUser(order, user)
+    await ensureOrderPointLog(
+      order,
+      -Number(order.pointsCost),
+      `兑换：${order.title}${order.caseId ? ` #${order.caseId}` : ''}`,
+    )
+    await patchPointOrder(order.id, {
+      status: 'completed',
+      completedAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    })
+    return updated
+  } finally {
+    inFlightOrders.delete(order.id)
+  }
 }
 
 /**
@@ -182,7 +428,7 @@ export const consumeChatQuota = async (userId) => {
 
   return {
     ok: false,
-    reason: '今日免费问答已用完，请前往积分兑换获取问答次数',
+    reason: '今日免费问答已用完，请前往积分商城获取问答次数',
     user,
   }
 }

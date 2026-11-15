@@ -48,7 +48,7 @@
           }
         ]
       },
-      "points": 650,
+      "points": 1765,
       "lastClaimDate": "2026-11-13",
       "chatQuota": 30,
       "unlockedCaseIds": [
@@ -59,9 +59,13 @@
         "review_card",
         "review_card"
       ],
-      "chatFreeDate": "2026-11-13",
-      "chatFreeUsed": 7,
-      "dailyLearningDrawDate": "2026-11-13"
+      "chatFreeDate": "2026-11-15",
+      "chatFreeUsed": 6,
+      "dailyLearningDrawDate": "2026-11-13",
+      "processedPointOrderIds": [
+        "purchase-mwhvsou1-l9v9yg",
+        "purchase-mwhwijon-5lha7z"
+      ]
     },
     {
       "id": 2,
@@ -5511,7 +5515,7 @@
       ],
       "difficulty": "入门",
       "cover": "/covers/lotus.jpg",
-      "views": 211,
+      "views": 212,
       "likes": 47,
       "createdAt": "2026-10-14T02:00:00.000Z"
     },
@@ -5565,7 +5569,7 @@
       ],
       "difficulty": "综合",
       "cover": "/covers/kingfisher.jpg",
-      "views": 144,
+      "views": 146,
       "likes": 27,
       "createdAt": "2026-10-20T02:00:00.000Z"
     },
@@ -5627,9 +5631,9 @@
   "conversations": [
     {
       "userId": 2,
-      "title": "潮湿表面还能否用干黏附”或“轻量化时",
+      "title": "荷叶怎么导入教学?",
       "createdAt": "2026-11-11T07:09:34.152Z",
-      "updatedAt": "2026-11-11T07:10:13.127Z",
+      "updatedAt": "2026-11-15T14:28:24.188Z",
       "id": 2
     },
     {
@@ -5641,10 +5645,17 @@
     },
     {
       "userId": 1,
-      "title": "新的仿生设计问答",
+      "title": "鲨鱼?",
       "createdAt": "2026-11-13T10:45:15.114Z",
-      "updatedAt": "2026-11-13T10:45:15.114Z",
+      "updatedAt": "2026-11-15T10:18:40.476Z",
       "id": 4
+    },
+    {
+      "userId": 1,
+      "title": "你是谁?",
+      "createdAt": "2026-11-15T10:25:35.922Z",
+      "updatedAt": "2026-11-15T14:02:34.283Z",
+      "id": 5
     }
   ],
   "messages": [
@@ -5743,6 +5754,134 @@
       "refCaseId": null,
       "createdAt": "2026-11-13T08:25:33.607Z",
       "id": 16
+    },
+    {
+      "conversationId": 4,
+      "role": "user",
+      "content": "壁虎足靠什么力黏附，剥离角为什么不能随便加大？",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T10:15:12.606Z",
+      "id": 17
+    },
+    {
+      "conversationId": 4,
+      "role": "assistant",
+      "content": "结论：壁虎足黏附主要靠范德华力（干黏附），不是胶水或负压。\n机理：脚趾刚毛末端的 spatula 与表面形成分子级近距离接触，大量微弱范德华力并联后足够承载。\n剥离角为什么不能随便加大：剥离时要把接触从“贴合”切到“揭起”。角度过大，法向分量猛增，刚毛会整片同时失黏，承载力骤降，也可能拉伤微结构。\n工程映射：执行器应控制剥离角与分区揭起顺序，让接触区逐步退出，而不是整足硬撕。\n优先盯住的参数：刚毛面密度（ρs）1×10^4 量级 根/mm²。密度提高承载力，但过高会让相邻刚毛粘连\n案例对照：壁虎脚掌的干黏附与可控脱附；生物原型：大壁虎脚趾由层状皮瓣、微米级刚毛和约 200 nm 的末端压舌板组成。刚毛沿趾向倾斜，动物靠“压下—拖拽—揭起”切换黏附与脱附，不分泌胶水。\n可迁移表述：末端压舌板与表面形成大面积分子级接触后，范德华力沿真实接触面积累积。切向预压增大接触面积，因此法向承载力会上升。脱附不是硬撕，而是把剥离角提高到约 25°–30°，让界面裂纹从趾尖向后扩展，黏附力按 Kendall 剥离模型迅速下降。这个机理适合可逆抓取，不适合永久粘接。\n教学建议：设计任务里把“剥离角范围 + 分区揭起”写进约束，潮湿或粗糙工况不要把干黏附当唯一主方案。",
+      "refCaseId": 1,
+      "createdAt": "2026-11-15T10:15:18.741Z",
+      "id": 18
+    },
+    {
+      "conversationId": 4,
+      "role": "user",
+      "content": "什么是六足机器人",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T10:18:07.018Z",
+      "id": 19
+    },
+    {
+      "conversationId": 4,
+      "role": "assistant",
+      "content": "你好，我是仿生机械设计 AI 助教「小智」。\n回答会先检索案例库，再组织机理、结构和参数，而不是只给一句比喻。\n当前案例库覆盖：壁虎脚掌的干黏附与可控脱附、蜂巢夹层的高比刚度壁板、鲨鱼盾鳞沟槽的湍流减阻、鸟类骨骼的中空桁架轻量化、蝙蝠调频声呐与双耳定位、荷叶乳突的双尺度自清洁、翠鸟喙形的入水冲击与降噪、蛇的多模态运动与蛇形机器人。\n你可以点下方示例，或直接问工况约束，例如“潮湿表面还能否用干黏附”。\n\n这次没有检索到足够明确的案例。把生物原型或工况再写具体一些。",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T10:18:12.290Z",
+      "id": 20
+    },
+    {
+      "conversationId": 4,
+      "role": "user",
+      "content": "鲨鱼?",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T10:18:35.684Z",
+      "id": 21
+    },
+    {
+      "conversationId": 4,
+      "role": "assistant",
+      "content": "结论：这个问题更接近「鲨鱼盾鳞沟槽的湍流减阻」。\n生物原型：鲨鱼皮盾鳞沿流向排列，表面有微米级纵沟。鳞片并不靠“更光滑”减阻，而是改变近壁湍流结构。\n可迁移机理：纵向微沟槽限制流向涡的横向摆动，削弱近壁区的湍流猝发和动量交换，从而降低壁面摩擦。减阻只在湍流边界层里明显，并且对无量纲间距 s+ = s·uτ/ν 敏感，经典刀刃型沟槽的最优间距大约在 s+ = 15–20。沟槽过高会增加湿面积，减阻变成增阻。\n机械方案：在蒙皮、贴膜或管道内壁上加工顺流向刀刃肋或锯齿肋。肋高与间距比 h/s 常取 0.5 左右。基体可用柔性聚氨酯贴膜，便于贴在曲面上；高速或耐磨场合改用微铣、滚压或激光加工的金属肋。肋的方向必须顺着主流，错了方向几乎没有收益。\n优先盯住的参数：无量纲间距（s+）15–20 -。用摩擦速度和运动粘度把几何间距无量纲化\n工程上可以落到：船舶减阻贴膜、长输管道内壁。\n教学建议：把上述参数写进设计任务的约束和校核项，再拿到参数推荐里用载荷、介质和重量上限核一次。",
+      "refCaseId": 3,
+      "createdAt": "2026-11-15T10:18:40.360Z",
+      "id": 22
+    },
+    {
+      "conversationId": 5,
+      "role": "user",
+      "content": "壁虎足靠什么力黏附，剥离角为什么不能随便加大？",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T13:56:33.309Z",
+      "id": 23
+    },
+    {
+      "conversationId": 5,
+      "role": "assistant",
+      "content": "结论：壁虎足黏附主要靠范德华力（干黏附），不是胶水或负压。\n机理：脚趾刚毛末端的 spatula 与表面形成分子级近距离接触，大量微弱范德华力并联后足够承载。\n剥离角为什么不能随便加大：剥离时要把接触从“贴合”切到“揭起”。角度过大，法向分量猛增，刚毛会整片同时失黏，承载力骤降，也可能拉伤微结构。\n工程映射：执行器应控制剥离角与分区揭起顺序，让接触区逐步退出，而不是整足硬撕。\n优先盯住的参数：刚毛面密度（ρs）1×10^4 量级 根/mm²。密度提高承载力，但过高会让相邻刚毛粘连\n案例对照：壁虎脚掌的干黏附与可控脱附；生物原型：大壁虎脚趾由层状皮瓣、微米级刚毛和约 200 nm 的末端压舌板组成。刚毛沿趾向倾斜，动物靠“压下—拖拽—揭起”切换黏附与脱附，不分泌胶水。\n可迁移表述：末端压舌板与表面形成大面积分子级接触后，范德华力沿真实接触面积累积。切向预压增大接触面积，因此法向承载力会上升。脱附不是硬撕，而是把剥离角提高到约 25°–30°，让界面裂纹从趾尖向后扩展，黏附力按 Kendall 剥离模型迅速下降。这个机理适合可逆抓取，不适合永久粘接。\n教学建议：设计任务里把“剥离角范围 + 分区揭起”写进约束，潮湿或粗糙工况不要把干黏附当唯一主方案。",
+      "refCaseId": 1,
+      "createdAt": "2026-11-15T13:56:37.935Z",
+      "id": 24
+    },
+    {
+      "conversationId": 5,
+      "role": "user",
+      "content": "壁虎",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T14:00:30.245Z",
+      "id": 25
+    },
+    {
+      "conversationId": 5,
+      "role": "assistant",
+      "content": "结论：壁虎足黏附主要靠范德华力（干黏附），不是胶水或负压。\n机理：脚趾刚毛末端的 spatula 与表面形成分子级近距离接触，大量微弱范德华力并联后足够承载。\n剥离角为什么不能随便加大：剥离时要把接触从“贴合”切到“揭起”。角度过大，法向分量猛增，刚毛会整片同时失黏，承载力骤降，也可能拉伤微结构。\n工程映射：执行器应控制剥离角与分区揭起顺序，让接触区逐步退出，而不是整足硬撕。\n优先盯住的参数：刚毛面密度（ρs）1×10^4 量级 根/mm²。密度提高承载力，但过高会让相邻刚毛粘连\n案例对照：壁虎脚掌的干黏附与可控脱附；生物原型：大壁虎脚趾由层状皮瓣、微米级刚毛和约 200 nm 的末端压舌板组成。刚毛沿趾向倾斜，动物靠“压下—拖拽—揭起”切换黏附与脱附，不分泌胶水。\n可迁移表述：末端压舌板与表面形成大面积分子级接触后，范德华力沿真实接触面积累积。切向预压增大接触面积，因此法向承载力会上升。脱附不是硬撕，而是把剥离角提高到约 25°–30°，让界面裂纹从趾尖向后扩展，黏附力按 Kendall 剥离模型迅速下降。这个机理适合可逆抓取，不适合永久粘接。\n教学建议：设计任务里把“剥离角范围 + 分区揭起”写进约束，潮湿或粗糙工况不要把干黏附当唯一主方案。",
+      "refCaseId": 1,
+      "createdAt": "2026-11-15T14:00:34.850Z",
+      "id": 26
+    },
+    {
+      "conversationId": 5,
+      "role": "user",
+      "content": "你是谁?",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T14:02:29.662Z",
+      "id": 27
+    },
+    {
+      "conversationId": 5,
+      "role": "assistant",
+      "content": "你好，我是仿生机械设计 AI 助教「小智」。\n回答会先检索案例库，再组织机理、结构和参数，而不是只给一句比喻。\n当前案例库覆盖：壁虎脚掌的干黏附与可控脱附、蜂巢夹层的高比刚度壁板、鲨鱼盾鳞沟槽的湍流减阻、鸟类骨骼的中空桁架轻量化、蝙蝠调频声呐与双耳定位、荷叶乳突的双尺度自清洁、翠鸟喙形的入水冲击与降噪、蛇的多模态运动与蛇形机器人。\n你可以点下方示例，或直接问工况约束，例如“潮湿表面还能否用干黏附”。",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T14:02:34.239Z",
+      "id": 28
+    },
+    {
+      "conversationId": 2,
+      "role": "user",
+      "content": "如何讲解十足机器人?",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T14:27:39.114Z",
+      "id": 29
+    },
+    {
+      "conversationId": 2,
+      "role": "assistant",
+      "content": "你好，我是仿生机械设计 AI 助教「小智」。\n回答会先检索案例库，再组织机理、结构和参数，而不是只给一句比喻。\n当前案例库覆盖：壁虎脚掌的干黏附与可控脱附、蜂巢夹层的高比刚度壁板、鲨鱼盾鳞沟槽的湍流减阻、鸟类骨骼的中空桁架轻量化、蝙蝠调频声呐与双耳定位、荷叶乳突的双尺度自清洁、翠鸟喙形的入水冲击与降噪、蛇的多模态运动与蛇形机器人。\n你可以点下方示例，或直接问工况约束，例如“潮湿表面还能否用干黏附”。\n\n这次没有检索到足够明确的案例。把生物原型或工况再写具体一些。",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T14:27:43.702Z",
+      "id": 30
+    },
+    {
+      "conversationId": 2,
+      "role": "user",
+      "content": "荷叶怎么导入教学?",
+      "refCaseId": null,
+      "createdAt": "2026-11-15T14:28:19.519Z",
+      "id": 31
+    },
+    {
+      "conversationId": 2,
+      "role": "assistant",
+      "content": "结论：这个问题更接近「荷叶乳突的双尺度自清洁」。\n生物原型：荷叶表面有微米级乳突，乳突上还有蜡质纳米枝晶。水滴接触角大于 150°，稍一倾斜就滚走，并把灰尘带走。\n可迁移机理：液滴坐在固-气复合界面上，这是 Cassie-Baxter 状态。粗糙度让液滴只接触凸起顶部，三相接触线很短，接触角滞后小，所以滚动角可以低于 10°。污染物颗粒与液滴的黏附往往大于与固体的黏附，于是被水滴带走。一旦液滴被压进凹坑变成 Wenzel 状态，自清洁就会失效。\n机械方案：先在基材上用激光、微铣或复制模做出微柱或微坑，再覆盖低表面能涂层，或直接用疏水弹性体复制双尺度织构。户外件要设计涂层可再涂覆，因为沙蚀会先磨掉纳米结构。传感器窗口还要同时满足透光，不能只追求接触角。\n优先盯住的参数：表观接触角（θ*）>150 °。只说明疏水，不保证容易滚落\n工程上可以落到：户外传感器窗口、光伏板防尘。\n教学建议：把上述参数写进设计任务的约束和校核项，再拿到参数推荐里用载荷、介质和重量上限核一次。",
+      "refCaseId": 6,
+      "createdAt": "2026-11-15T14:28:24.135Z",
+      "id": 32
     }
   ],
   "courses": [
@@ -6166,6 +6305,27 @@
       "type": "view",
       "createdAt": "2026-11-13T15:13:25.454Z",
       "id": 44
+    },
+    {
+      "userId": 1,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-15T14:06:57.582Z",
+      "id": 45
+    },
+    {
+      "userId": 1,
+      "caseId": 6,
+      "type": "view",
+      "createdAt": "2026-11-15T14:07:35.487Z",
+      "id": 46
+    },
+    {
+      "userId": 2,
+      "caseId": 7,
+      "type": "view",
+      "createdAt": "2026-11-15T14:33:06.611Z",
+      "id": 47
     }
   ],
   "videos": [
@@ -7399,6 +7559,49 @@
       "durationSec": 38,
       "createdAt": "2026-11-13T06:16:33.014Z",
       "id": 11
+    },
+    {
+      "userId": 1,
+      "paperId": 3,
+      "mode": "assigned",
+      "subject": "机器人",
+      "score": 80,
+      "total": 100,
+      "correctCount": 4,
+      "questionCount": 5,
+      "wrongQuestionIds": [
+        14
+      ],
+      "detail": [
+        {
+          "questionId": 14,
+          "selected": "正确",
+          "correct": false
+        },
+        {
+          "questionId": 21,
+          "selected": "身体曲率波与方向性摩擦协同",
+          "correct": true
+        },
+        {
+          "questionId": 22,
+          "selected": "正确",
+          "correct": true
+        },
+        {
+          "questionId": 23,
+          "selected": "机身侧滑与能耗",
+          "correct": true
+        },
+        {
+          "questionId": 16,
+          "selected": "剥离方向一致",
+          "correct": true
+        }
+      ],
+      "durationSec": 42,
+      "createdAt": "2026-11-15T14:09:02.915Z",
+      "id": 12
     }
   ],
   "pointLogs": [
@@ -7513,6 +7716,14 @@
       "amount": -25,
       "reason": "兑换：学习道具 · 复习卡",
       "createdAt": "2026-11-13T06:25:14.701Z"
+    },
+    {
+      "id": 1794751743640,
+      "userId": 1,
+      "type": "earn",
+      "amount": 15,
+      "reason": "完成答题智测",
+      "createdAt": "2026-11-15T14:09:03.136Z"
     }
   ],
   "teachingRecords": [
@@ -7612,6 +7823,95 @@
       "durationMin": 30,
       "result": "把重量、行程和环境约束写入方案比较表。",
       "followUp": "提交候选方案权衡说明。"
+    }
+  ],
+  "pointOrders": [
+    {
+      "id": "purchase-mwhprj0g-pi038l",
+      "requestId": "store-1794739844567-c65uxi",
+      "userId": 1,
+      "type": "purchase",
+      "productId": "chat_10",
+      "title": "AI 问答 10 次",
+      "amountCents": 500,
+      "pointsDelta": 0,
+      "chatQuotaDelta": 10,
+      "status": "failed",
+      "paymentStatus": "failed",
+      "paymentMethod": "mock",
+      "createdAt": "2026-11-15T10:50:44.607Z",
+      "updatedAt": "2026-11-15T10:50:53.470Z"
+    },
+    {
+      "id": "purchase-mwhsgeuo-3t9vwe",
+      "requestId": "store-1794744364798-ehk0uk",
+      "userId": 1,
+      "type": "purchase",
+      "productId": "points_100",
+      "title": "100 积分",
+      "amountCents": 600,
+      "pointsDelta": 100,
+      "chatQuotaDelta": 0,
+      "status": "expired",
+      "paymentStatus": "expired",
+      "paymentMethod": "experience",
+      "createdAt": "2026-11-15T12:06:04.848Z",
+      "expiresAt": "2026-11-15T12:11:04.848Z",
+      "updatedAt": "2026-11-15T12:19:44.676Z",
+      "expiredAt": "2026-11-15T12:19:44.675Z"
+    },
+    {
+      "id": "purchase-mwhvsou1-l9v9yg",
+      "requestId": "store-1794749976463-fbcm3x",
+      "userId": 1,
+      "type": "purchase",
+      "productId": "points_550",
+      "title": "550 积分",
+      "amountCents": 2500,
+      "pointsDelta": 550,
+      "chatQuotaDelta": 0,
+      "status": "experience_completed",
+      "paymentStatus": "experience_completed",
+      "paymentMethod": "experience",
+      "createdAt": "2026-11-15T13:39:36.505Z",
+      "expiresAt": "2026-11-15T13:44:36.505Z",
+      "updatedAt": "2026-11-15T13:39:44.853Z",
+      "completedAt": "2026-11-15T13:39:44.853Z"
+    },
+    {
+      "id": "purchase-mwhvu5q8-0txgnf",
+      "requestId": "store-1794750045002-b0ex2q",
+      "userId": 1,
+      "type": "purchase",
+      "productId": "points_550",
+      "title": "550 积分",
+      "amountCents": 2500,
+      "pointsDelta": 550,
+      "chatQuotaDelta": 0,
+      "status": "pending",
+      "paymentStatus": "unpaid",
+      "paymentMethod": "experience",
+      "createdAt": "2026-11-15T13:40:45.056Z",
+      "expiresAt": "2026-11-15T13:45:45.056Z",
+      "updatedAt": "2026-11-15T13:40:45.056Z"
+    },
+    {
+      "id": "purchase-mwhwijon-5lha7z",
+      "requestId": "store-1794751182825-lgnh2v",
+      "userId": 1,
+      "type": "purchase",
+      "productId": "points_550",
+      "title": "550 积分",
+      "amountCents": 2500,
+      "pointsDelta": 550,
+      "chatQuotaDelta": 0,
+      "status": "experience_completed",
+      "paymentStatus": "experience_completed",
+      "paymentMethod": "experience",
+      "createdAt": "2026-11-15T13:59:42.887Z",
+      "expiresAt": "2026-11-15T14:04:42.887Z",
+      "updatedAt": "2026-11-15T13:59:47.908Z",
+      "completedAt": "2026-11-15T13:59:47.908Z"
     }
   ]
 }

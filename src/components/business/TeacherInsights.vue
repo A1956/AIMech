@@ -1,5 +1,6 @@
 <script setup>
 import { computed } from 'vue'
+import AnimatedNumber from '@/components/business/AnimatedNumber.vue'
 import StudyChart from '@/components/business/StudyChart.vue'
 import { useTheme } from '@/composables/useTheme'
 import {
@@ -47,7 +48,8 @@ const summary = computed(() => [
   { label: '高频错题', value: props.hotWrongQuestions.length },
   {
     label: '教学时长合计',
-    value: `${props.teachingDuration.totalMinutes || 0} 分`,
+    value: props.teachingDuration.totalMinutes || 0,
+    unit: '分',
     tip: `路径 ${props.teachingDuration.courseHours || 0}h · 视频 ${props.teachingDuration.videoHours || 0}h`,
   },
 ])
@@ -55,10 +57,21 @@ const summary = computed(() => [
 
 <template>
   <div class="space-y-6">
+    <section class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4" aria-label="教学概览">
+      <article v-for="item in summary" :key="item.label" class="bio-card p-4">
+        <p class="text-xs text-mist">{{ item.label }}</p>
+        <p class="mt-2 text-2xl font-semibold text-paper">
+          <AnimatedNumber :value="item.value" :duration="1600" />
+          <span v-if="item.unit" class="ml-1 text-base font-medium">{{ item.unit }}</span>
+        </p>
+        <p v-if="item.tip" class="mt-1 text-xs text-mist">{{ item.tip }}</p>
+      </article>
+    </section>
+
     <section class="bio-card p-4">
       <div class="mb-2">
         <h3 class="text-base font-semibold">学生高频问题</h3>
-        <p class="text-xs text-mist">置顶展示：来自助教会话与班级提问统计，便于优先安排答疑课</p>
+        <p class="text-xs text-mist">来自助教会话与班级提问统计，便于优先安排答疑课</p>
       </div>
       <StudyChart :option="questionOption" height="280px" />
       <div class="mt-3 grid gap-2 md:grid-cols-2">
@@ -73,32 +86,6 @@ const summary = computed(() => [
           </p>
         </div>
       </div>
-    </section>
-
-    <section class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-      <article v-for="item in summary" :key="item.label" class="bio-card p-4">
-        <p class="text-xs text-mist">{{ item.label }}</p>
-        <p class="mt-2 text-2xl font-semibold text-paper">{{ item.value }}</p>
-        <p v-if="item.tip" class="mt-1 text-xs text-mist">{{ item.tip }}</p>
-      </article>
-    </section>
-
-    <section class="grid gap-4 xl:grid-cols-2">
-      <article class="bio-card p-4 xl:col-span-2">
-        <div class="mb-2">
-          <h3 class="text-base font-semibold">答题高频错题</h3>
-          <p class="text-xs text-mist">来自学生自测与课堂检测卷，建议下周复测</p>
-        </div>
-        <StudyChart :option="wrongOption" height="280px" />
-        <div class="mt-3 overflow-x-auto">
-          <el-table :data="hotWrongQuestions.slice(0, 6)" size="small" style="min-width: 520px">
-            <el-table-column prop="stem" label="题干" min-width="220" show-overflow-tooltip />
-            <el-table-column prop="subject" label="科目" width="90" />
-            <el-table-column prop="knowledgePoint" label="知识点" min-width="120" />
-            <el-table-column prop="wrongCount" label="错次" width="70" />
-          </el-table>
-        </div>
-      </article>
     </section>
 
     <section class="grid gap-4 xl:grid-cols-2">
@@ -122,6 +109,24 @@ const summary = computed(() => [
         <h3 class="mb-1 text-base font-semibold">知识点薄弱分布</h3>
         <p class="mb-2 text-xs text-mist">综合标注薄弱率与路径完成率，优先补课</p>
         <StudyChart :option="weakOption" height="300px" />
+      </article>
+    </section>
+
+    <section class="grid gap-4 xl:grid-cols-2">
+      <article class="bio-card p-4 xl:col-span-2">
+        <div class="mb-2">
+          <h3 class="text-base font-semibold">答题高频错题</h3>
+          <p class="text-xs text-mist">来自学生自测与课堂检测卷，建议下周复测</p>
+        </div>
+        <StudyChart :option="wrongOption" height="280px" />
+        <div class="mt-3 overflow-x-auto">
+          <el-table :data="hotWrongQuestions.slice(0, 6)" size="small" style="min-width: 520px">
+            <el-table-column prop="stem" label="题干" min-width="220" show-overflow-tooltip />
+            <el-table-column prop="subject" label="科目" width="90" />
+            <el-table-column prop="knowledgePoint" label="知识点" min-width="120" />
+            <el-table-column prop="wrongCount" label="错次" width="70" />
+          </el-table>
+        </div>
       </article>
     </section>
 

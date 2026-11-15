@@ -655,56 +655,6 @@ html.dark .tutor-bubble-user {
   background: #e5484d !important;
 }
 
-.login-green-phantom {
-  position: fixed;
-  inset: 0;
-  z-index: 80;
-  overflow: hidden;
-  background: transparent;
-}
-
-.login-green-phantom::before {
-  content: '';
-  position: absolute;
-  top: -20%;
-  left: -40%;
-  width: 36%;
-  height: 140%;
-  background: linear-gradient(
-    105deg,
-    transparent 0%,
-    rgba(46, 204, 113, 0.08) 35%,
-    rgba(46, 204, 113, 0.42) 50%,
-    rgba(46, 204, 113, 0.08) 65%,
-    transparent 100%
-  );
-  transform: skewX(-18deg);
-  animation: login-phantom-sweep 0.52s ease-out forwards;
-}
-
-@keyframes login-phantom-sweep {
-  from {
-    transform: skewX(-18deg) translateX(0);
-    opacity: 0.2;
-  }
-  30% {
-    opacity: 1;
-  }
-  to {
-    transform: skewX(-18deg) translateX(320%);
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .login-green-phantom::before {
-    animation: none;
-    opacity: 0.35;
-    left: 30%;
-    width: 40%;
-  }
-}
-
 .case-reveal {
   opacity: 0;
   transform: translateY(18px);

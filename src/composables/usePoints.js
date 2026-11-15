@@ -2,10 +2,16 @@ import { computed } from 'vue'
 import { ElMessage } from 'element-plus'
 import {
   claimDailyPoints,
+  completePurchaseExperience,
   consumeChatQuota,
+  createPurchaseOrder,
   drawDailyLearningItem,
   earnPoints,
+  expirePurchaseOrder,
   fetchOffers,
+  fetchPointLogs,
+  fetchPointOrders,
+  preparePurchasePayment,
   redeemOffer,
   syncPointsProfile,
 } from '@/api/points'
@@ -79,10 +85,10 @@ export const usePoints = () => {
     }
   }
 
-  const redeem = async ({ offerId, caseId } = {}) => {
+  const redeem = async ({ offerId, caseId, requestId } = {}) => {
     if (!profile.value?.id) return null
     try {
-      const updated = await redeemOffer(profile.value.id, { offerId, caseId })
+      const updated = await redeemOffer(profile.value.id, { offerId, caseId, requestId })
       applyUser(updated)
       ElMessage.success('兑换成功')
       return updated
@@ -118,6 +124,25 @@ export const usePoints = () => {
   }
 
   const listOffers = fetchOffers
+  const listOrders = async () => {
+    if (!profile.value?.id) return []
+    return fetchPointOrders(profile.value.id)
+  }
+  const listPointLogs = async () => {
+    if (!profile.value?.id) return []
+    return fetchPointLogs(profile.value.id)
+  }
+  const createPurchase = async (packageId, requestId) => {
+    if (!profile.value?.id) throw new Error('请先登录')
+    return createPurchaseOrder(profile.value.id, packageId, requestId)
+  }
+  const preparePayment = async (orderId) => preparePurchasePayment(orderId)
+  const expirePurchase = async (orderId) => expirePurchaseOrder(orderId)
+  const completePurchase = async (orderId) => {
+    const result = await completePurchaseExperience(orderId)
+    applyUser(result.user)
+    return result
+  }
 
   return {
     points,
@@ -137,5 +162,11 @@ export const usePoints = () => {
     tryConsumeChat,
     isCaseLocked,
     listOffers,
+    listOrders,
+    listPointLogs,
+    createPurchase,
+    preparePayment,
+    expirePurchase,
+    completePurchase,
   }
 }

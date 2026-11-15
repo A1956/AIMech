@@ -49,17 +49,17 @@ export const pickDailyLearningDrawPrize = (randomValue = Math.random()) => {
 export const REDEEM_OFFERS = [
   {
     id: 'chat_pack_5',
-    title: '问答次数包',
-    desc: '兑换后增加 5 次小智问答额度',
+    title: 'AI 问答 1 次',
+    desc: '兑换后增加 1 次小智问答额度',
     cost: 30,
     kind: 'chat_pack',
-    payload: { amount: 5 },
+    payload: { amount: 1 },
   },
   {
     id: 'unlock_case',
     title: '解锁进阶案例',
     desc: '解锁 1 个进阶/综合案例的完整内容',
-    cost: 40,
+    cost: 100,
     kind: 'unlock_case',
     payload: {},
   },
@@ -72,6 +72,58 @@ export const REDEEM_OFFERS = [
     payload: { item: 'review_card' },
   },
 ]
+
+/** 商城购买套餐；金额以分存储 */
+export const PURCHASE_PACKAGES = [
+  {
+    id: 'points_100',
+    title: '100 积分',
+    desc: '购买后立即到账',
+    kind: 'points',
+    points: 100,
+    chatQuota: 0,
+    priceCents: 600,
+  },
+  {
+    id: 'points_550',
+    title: '550 积分',
+    desc: '含 50 积分赠送',
+    kind: 'points',
+    points: 550,
+    chatQuota: 0,
+    priceCents: 2500,
+  },
+  {
+    id: 'chat_10',
+    title: 'AI 问答 10 次',
+    desc: '直接购买小智问答次数',
+    kind: 'chat_quota',
+    points: 0,
+    chatQuota: 10,
+    priceCents: 500,
+  },
+  {
+    id: 'chat_30',
+    title: 'AI 问答 30 次',
+    desc: '适合集中学习与连续提问',
+    kind: 'chat_quota',
+    points: 0,
+    chatQuota: 30,
+    priceCents: 1200,
+  },
+]
+
+export const PURCHASE_PAYMENT_TTL_MS = 5 * 60 * 1000
+
+export const POINT_ORDER_STATUS_LABELS = {
+  pending: '待确认支付',
+  processing: '处理中',
+  paid: '已完成',
+  experience_completed: '体验已完成',
+  failed: '支付失败',
+  expired: '已过期',
+  completed: '已兑换',
+}
 
 /** 需要积分解锁的案例难度 */
 export const LOCKED_DIFFICULTIES = ['进阶', '综合']
