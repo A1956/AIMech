@@ -68,15 +68,6 @@
 - 移动端按 16:9 自适应，容器预留比例避免布局跳动；视频无音轨，因此不依赖字幕即可理解。
 - 清单加载失败时静默隐藏视频入口，案例正文与参数表不受影响。
 
-**重新生成**
-
-```bash
-python scripts/build-case-videos.py            # 全量重建 8 段
-python scripts/build-case-videos.py --case gecko   # 只重建某一段
-```
-
-脚本依赖 Pillow 与 imageio-ffmpeg（仅构建期使用，不进运行时依赖）。改素材只需更新 `sources.json` 与对应素材后重跑；片头版式可用 `badgePosition`（`left`/`right`）与 `titleOverlay`（`false` 关闭叠加标题，适用于封面自带大字的案例）微调。
-
 ## 技术栈
 
 - Vue 3.5 + `<script setup>` · Vite 5 · Vue Router 4 · Pinia + AI · RAG
