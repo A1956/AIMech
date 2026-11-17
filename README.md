@@ -2,12 +2,30 @@
 
 面向机械与机器人专业的**仿生机械设计**学习平台。以案例机理、参数表、答题智测、智慧方案推荐与班级智能学情形成闭环，前端本地即可完整运行。
 
+## 作品定位与价值
+
+- **原创 Web 应用**：由团队面向机械与机器人专业学习场景设计，提供 PC 与移动端自适应的仿生机械设计学习体验。
+- **AI 是核心能力**：AI 助教结合案例检索与可选的大模型问答；智慧方案推荐、学习路径和班级学情分析共同支持“学、练、教、评”闭环。远程大模型不可用时，助教可回退到本地案例引擎。
+- **社会价值与落地潜力**：帮助学生理解仿生结构与设计原理，为教师提供学习过程与班级学情参考；可作为课程辅助工具继续试点和迭代。当前版本以本地开发演示为主，正式落地前仍需接入生产级数据库、认证与访问控制。
+
+## 技术架构
+
+- **Web 前端**：Vue 3、Vue Router、Pinia 与 Vite，提供响应式学习界面和模块路由。
+- **学习与分析功能**：案例库、答题智测、AI 助教、方案推荐、学习路径及教师学情分析；相关业务逻辑在 `src/` 中组织。
+- **本地数据与 AI 服务**：json-server 使用 `mock/db.json` 提供开发数据；Node.js 代理可选地将对话转发至 DeepSeek。开发代理仅用于本机运行，不是生产后端。
+- **主要依赖与命令**：详见下方技术栈、`package.json` 及启动步骤。
+
+## 团队信息
+
+- 团队：**智勇双全队**
+- 成员及分工：待补充
+
 ## 运行与部署策略
 
-- **当前阶段：仅本地运行**，不发布到公网。Vite / json-server 绑定 `127.0.0.1`。
-- `mock/db.json` 是本地开发数据，不具备生产数据库的事务、并发写入、权限隔离和备份能力；上线前需迁移到服务端数据库，并由后端负责数据校验与访问控制。
-- **保留未来部署能力**：`npm run build` 产出 `dist/`；大模型变量见 `.env.example`，密钥不入库。
-- 本仓库不提供上线脚本或 CI 发布流水线。
+- **当前阶段**Vite / json-server 绑定 `127.0.0.1`。
+- `mock/db.json` 是本地开发数据；上线前需迁移到服务端数据库，并由后端负责数据校验与访问控制。
+- **部署能力**：`npm run build` 产出 `dist/`；大模型变量见 `.env.example`，密钥不入库。
+
 
 ## 功能命名（当前）
 
@@ -36,25 +54,11 @@
 - 若你有已授权的 VCG 图片，放入 `public/media/hero.jpg`（或 `.png`），登录页与首页会自动优先使用；详见 `public/media/README.md`
 - 不依赖 iconfont / VCG 在线 CDN，避免版权与外链风险
 
-## 案例视频
-
-案例库每个案例配一段观察短片（默认 8 秒），放在案例详情页封面下方，列表卡片上用「视频」角标提示。
-
-**规格**
-
-| 项 | 取值 |
-|---|---|
-| 容器 / 编码 | MP4 / H.264（baseline 可解） |
-| 分辨率 / 帧率 | 1280×720 / 24 fps |
-| 时长 | 默认 8 秒（3 张画面 × 约 2.67 秒）；接入实拍片段的案例按时长顺延 |
-| 音轨 | 无（避免自动播放被浏览器拦截，也不引入配乐版权问题） |
-| 转场 | 0.5 秒交叉淡化；单张画面内 4% 缓慢推近，禁止甩镜与大缩放 |
-| 文字 | 左下角标注案例名与观察要点，右下角标注画面来源，字号按 1280 宽自适应 |
 
 **素材来源与许可**
 
-- 默认每段视频由 3 帧构成：1 帧项目原有封面（仅做色调统一与版式风格化）+ 2 张 Pexels 真实摄影照片。
-- 个别案例可改为「片头 + 实拍片段」（如 `kingfisher`）：`sources.json` 中把后两帧换成一项 `kind: "footage"`，脚本会自动缩放裁切、去音轨并接 0.5 秒交叉淡化。
+
+- 案例可改为「片头 + 实拍片段」（如 `kingfisher`）：`sources.json` 中把后两帧换成一项 `kind: "footage"`，脚本会自动缩放裁切、去音轨并接 0.5 秒交叉淡化。
 - 只用 Pexels 免费许可照片，排除付费 / 赞助 / 仅限编辑用途素材；不下载、不使用带水印版本。
 - 作品页、作者、许可链接记录在 `public/media/cases/sources.json`，详情页「查看素材来源与许可」可直接跳转。
 - 署名仅用于来源追溯，不表示作者为本项目或课程背书；照片不做显微化、实验化等误导性改写。
@@ -68,23 +72,21 @@
 - 移动端按 16:9 自适应，容器预留比例避免布局跳动；视频无音轨，因此不依赖字幕即可理解。
 - 清单加载失败时静默隐藏视频入口，案例正文与参数表不受影响。
 
-**重新生成**
-
-```bash
-python scripts/build-case-videos.py            # 全量重建 8 段
-python scripts/build-case-videos.py --case gecko   # 只重建某一段
-```
-
-脚本依赖 Pillow 与 imageio-ffmpeg（仅构建期使用，不进运行时依赖）。改素材只需更新 `sources.json` 与对应素材后重跑；片头版式可用 `badgePosition`（`left`/`right`）与 `titleOverlay`（`false` 关闭叠加标题，适用于封面自带大字的案例）微调。
 
 ## 技术栈
 
-- Vue 3.5 + `<script setup>` · Vite 5 · Vue Router 4 · Pinia
-- Axios · Element Plus 按需 · ECharts 5 · json-server · Tailwind CSS
+- Vue 3.5 + `<script setup>` · Vite 5 · Vue Router 4 · Pinia + LLM · RAG
+- Axios · Element Plus · ECharts 5 · json-server · Tailwind CSS
+
+## 代码规范与协作记录
+
+- 按功能组织 Vue 单文件组件、API、composables、stores 与 utils；遵循项目现有命名和格式约定，复杂业务逻辑应补充必要注释。
+- 使用 ESLint 检查 JavaScript 与 Vue 文件：`npm run lint`；使用 `npm run build` 验证生产构建。
+- 保留真实、连续的 Git 提交历史，提交应反映实际开发工作，不为评审伪造或重写开发记录。
 
 ## 大模型接入（DeepSeek，可选）
 
-AI 助教「小智」的远程回答由 DeepSeek 提供，官方文档 `https://api-docs.deepseek.com/zh-cn/`。采用 OpenAI 兼容的 `/chat/completions` 接口，流式（SSE）返回。
+AI 助教「小智」的远程回答由 DeepSeek 提供，官方文档 `https://api-docs.deepseek.com/`。采用 OpenAI 兼容的 `/chat/completions` 接口，流式（SSE）返回。
 
 - 调用链：浏览器将 system（人设 + 案例库）与多轮历史发给本机 `/llm/chat/completions` → 服务端代理添加凭据并请求 DeepSeek → 浏览器解析流式响应。
 - 浏览器端只使用 `VITE_DEEPSEEK_ENABLED` 开关和超时配置；密钥、上游地址和模型只由 Node 服务端读取。
@@ -139,10 +141,11 @@ npm run llm:proxy
 
 ## GitHub 发布前检查
 
+- **托管平台：GitHub**。提交评审前须将仓库设为 Public，或向评审者提供访问权限。
 - `node_modules/` 和 `dist/` 已忽略；提交 `package.json` 与 `package-lock.json`，不要提交依赖目录。
 - `.env.*` 本地配置、`.cursorrules` 和 `.rules` 文件已忽略；只提交 `.env.example` 与 `.env.server.example` 等不含密钥的模板。
 - 不要把真实 API Key、令牌、数据库连接串或真实用户数据放入前端 `VITE_` 变量、源码或 mock 数据。
-- 当前工作区没有 Git 提交历史；首次提交后仍需在推送前检查暂存区和提交内容。
+- `.env.example` 与 `.env.server.example` 提供环境变量模板；`package.json` 和 `package-lock.json` 分别记录项目依赖范围与锁定版本。
 - 若密钥曾推送到远端，先在服务商处撤销/轮换，再从 Git 历史移除（例如使用 `git filter-repo` 并强制更新远端）；仅删除当前文件不足以清除历史泄露。
 
 ## 脚本
@@ -154,6 +157,6 @@ npm run llm:proxy
 | `npm run llm:proxy` | 本机 DeepSeek / OpenAI 兼容 TTS 服务端代理 |
 | `npm run test:proxy` | 测试代理的密钥转发、来源限制与流式响应 |
 | `npm run db:check` | 检查本地数据库主键、唯一账号、关联引用和试卷成绩 |
-| `npm run build` | 生产构建（保留未来部署） |
+| `npm run build` | 生产构建（部署） |
 | `npm run preview` | 本机预览 |
 | `npm run lint` | ESLint |
