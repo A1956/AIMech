@@ -72,7 +72,7 @@
 
 ## 技术栈
 
-- Vue 3.5 + `<script setup>` · Vite 5 · Vue Router 4 · Pinia + LLM · RAG
+- Vue 3.5 +  Vite 5 · Vue Router 4 · Pinia + LLM · RAG
 - Axios · Element Plus · ECharts 5 · json-server · Tailwind CSS
 
 ## 代码规范与协作记录
