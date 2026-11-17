@@ -12,7 +12,7 @@
 
 - **Web 前端**：Vue 3、Vue Router、Pinia 与 Vite，提供响应式学习界面和模块路由。
 - **学习与分析功能**：案例库、答题智测、AI 助教、方案推荐、学习路径及教师学情分析；相关业务逻辑在 `src/` 中组织。
-- **数据与 AI 服务**：json-server 使用 `mock/db.json` 提供开发数据；Node.js 代理可选地将对话转发至 DeepSeek。开发代理仅用于本机运行，不是生产后端。
+- **数据与 AI 服务**：json-server 使用 `mock/db.json` 提供开发数据；Node.js 代理可选地将对话转发至 DeepSeek。
 - **主要依赖与命令**：详见下方技术栈、`package.json` 及启动步骤。
 
 ## 团队信息
